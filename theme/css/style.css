@@ -673,12 +673,12 @@ button.swiper-pagination-bullet {
 .page-central_listas_cliente .line-panel,
 .page-central_comissoes .line-panel,
 .page-central_comissoes_extrato .line-panel,
-.page-central_cliente .line-panel, .page-contact .container2 .board:nth-child(n+3), .page-busca_noticias .noticias #noticia_dados h3, .page-depoimentos .container, .pageProduct-lastSeen .lastSeen-list .visitados_produtos, .pageProduct .tabs-content.payment #atualizaFormas ul li table td .txt-forma-pagto, .pageProduct-kit .tray-kit-item > div .tray-kit-variation [data-id=menuVars], .pageProduct #menuVars .varCont .dd .ddChild, .product {
+.page-central_cliente .line-panel, .page-contact .container2 .board:nth-child(n+3), .page-busca_noticias .noticias #noticia_dados h3, .page-depoimentos .container, .pageProduct-lastSeen .lastSeen-list .visitados_produtos, .pageProduct .tabs-content.payment #atualizaFormas ul li table td .txt-forma-pagto, .pageProduct-kit .tray-kit-item > div .tray-kit-variation [data-id=menuVars], .pageProduct #menuVars .varCont .dd .ddChild {
   display: flex;
   flex-direction: column;
 }
 
-.pageProduct-related .related-showcase, .pageProduct-gifts .brinde_lista, .showcase-listProduct {
+.pageProduct-related .related-showcase, .pageProduct-gifts .brinde_lista {
   display: flex;
   justify-content: flex-start;
 }
@@ -703,7 +703,7 @@ button.swiper-pagination-bullet {
 
 .page-extra .container form tr:only-child td:nth-child(1)::before, .page-extra .container form tr:only-child td:nth-child(2)::before, .page-central_cliente #paginacao .right .prev a,
 .page-central_cliente #paginacao .right .next a, .page-central_cliente #paginacao, .page-lista .lista-produtos .lista-produto-adquirido,
-.page-print_lista .lista-produtos .lista-produto-adquirido, .page-contact .contactUs-phone:before, .page-contact .contactUs-whats:before, .page-contact .contactUs-email:before, .modals.u-show, .pageProduct-batchPromotion #miniad img:not([src*=".png"]):not([src*=".jpg"]):not([src*=".jpeg"]):not([src*=".svg"]):not([src*=".gif"]), .pageProduct-tags .tag, .pageProduct-gallery .gallery-thumbs, .pageProduct-gallery .swiper-slide, .pageProduct-gallery, .container3 .board .right, .page-comparador .comparator ul li ul .comparsionFoto div, .page-comparador .comparatorTabs ul li.aberta, .page-comparador .comparatorTabs ul li, .pagination, .brands .icon-tag, .brands-item, .modal .modal-body, .tagCloud-list, .product-tag .tag-progressiveDiscount .progressiveDiscount, .product-tag .tag, .product-rating, .product-compare .compare-button, .footer-credits .credits, .footer .footer-newsletter .newsletter-email, .footer .footer-newsletter .newsletter-text, .footer .footer-newsletter, .header-menu .menu-firstLevel, .header-menu, .header-cart, .header-account, .header-search, .justify-center {
+.page-print_lista .lista-produtos .lista-produto-adquirido, .page-contact .contactUs-phone:before, .page-contact .contactUs-whats:before, .page-contact .contactUs-email:before, .modals.u-show, .pageProduct-batchPromotion #miniad img:not([src*=".png"]):not([src*=".jpg"]):not([src*=".jpeg"]):not([src*=".svg"]):not([src*=".gif"]), .pageProduct-tags .tag, .pageProduct-gallery .gallery-thumbs, .pageProduct-gallery .swiper-slide, .pageProduct-gallery, .container3 .board .right, .page-comparador .comparator ul li ul .comparsionFoto div, .page-comparador .comparatorTabs ul li.aberta, .page-comparador .comparatorTabs ul li, .pagination, .brands .icon-tag, .brands-item, .modal .modal-body, .tagCloud-list, .footer-credits .credits, .footer .footer-newsletter .newsletter-email, .footer .footer-newsletter .newsletter-text, .footer .footer-newsletter, .header-menu .menu-firstLevel, .header-menu, .header-cart, .header-account, .header-search, .justify-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -735,7 +735,7 @@ button.swiper-pagination-bullet {
   align-items: center;
 }
 
-.page-central_listas .container3:not(.central-conteudo) + .board, .pageProduct-lastSeen .lastSeen-list #produtos, .pageProduct .tabs-nav .nav-list, .modal .cart-preview-footer, .modal .modal-header, .modal .modal-content #div_atualiza form fieldset p:last-child, .reviews-container .dep_lista, .product-tag {
+.page-central_listas .container3:not(.central-conteudo) + .board, .pageProduct-lastSeen .lastSeen-list #produtos, .pageProduct .tabs-nav .nav-list, .modal .cart-preview-footer, .modal .modal-header, .modal .modal-content #div_atualiza form fieldset p:last-child, .reviews-container .dep_lista {
   display: flex;
   justify-content: space-between;
 }
@@ -747,14 +747,14 @@ button.swiper-pagination-bullet {
   align-items: center;
 }
 
-.page-central_listas .container3:not(.central-conteudo) + .board .icoFilho, .pageProduct-buyTogether .buyTogether .compreJunto .fotosCompreJunto, .pageProduct #produto_nao_disp, .page-comparador .comparator ul li ul .comparsionFoto > a, .page-comparador .comparator ul li ul, .news-container, .reviews-container .dep_dados, .reviews-container, .loader:not(img), .product .tag-floating, .product-price, .menuMobile {
+.page-central_listas .container3:not(.central-conteudo) + .board .icoFilho, .pageProduct-buyTogether .buyTogether .compreJunto .fotosCompreJunto, .pageProduct #produto_nao_disp, .page-comparador .comparator ul li ul .comparsionFoto > a, .page-comparador .comparator ul li ul, .news-container, .reviews-container .dep_dados, .reviews-container, .loader:not(img), .menuMobile {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.page-comparador .comparator ul li ul .comparsionFoto, .product-info {
+.page-comparador .comparator ul li ul .comparsionFoto {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -2070,7 +2070,7 @@ h1, h2, h3 {
   width: 2rem;
 }
 
-.page-listas_criar #lista_criar .container3 .container2 input[type=checkbox]::before, .page-search #Vitrine form input[type=checkbox]::before, .pageProduct .tabs-reviews #comentario_cliente #form-comments input[type=checkbox]::before, .pageProduct .varCont ul li ul li .labelMultiVariacao input[type=checkbox]::before, .pageProduct .varCont ul li input[type=checkbox]::before, .page-register .default-content input[type=checkbox]::before, .filter-list .filter-checkbox input[type=checkbox]::before, .modal #concorda-termo input[type=checkbox]::before, .product-compare .compare-button[data-compare=remove] .compare-checkbox::before {
+.page-listas_criar #lista_criar .container3 .container2 input[type=checkbox]::before, .page-search #Vitrine form input[type=checkbox]::before, .pageProduct .tabs-reviews #comentario_cliente #form-comments input[type=checkbox]::before, .pageProduct .varCont ul li ul li .labelMultiVariacao input[type=checkbox]::before, .pageProduct .varCont ul li input[type=checkbox]::before, .page-register .default-content input[type=checkbox]::before, .filter-list .filter-checkbox input[type=checkbox]::before, .modal #concorda-termo input[type=checkbox]::before {
   background-color: var(--c_general_main);
   height: 0.7rem;
   width: 0.7rem;
@@ -3446,483 +3446,57 @@ div.Seguro {
   display: none;
 }
 
-.showcase-listProduct {
-  flex-wrap: wrap;
-  margin: 0 -0.625rem -2.5rem;
+.showcase {
+  width: 100%;
 }
-.showcase-listProduct .listProduct-item {
-  box-sizing: border-box;
-  margin-bottom: 2.5rem;
-  min-height: 100%;
+.showcase-listProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 @media (max-width: 768px) {
-  .showcase-listProduct .listProduct-item {
-    padding: 0 0.2rem;
-    width: 50%;
+  .showcase-listProduct {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 768.1px) and (max-width: 1280px) {
-  .showcase-listProduct .listProduct-item {
-    padding: 0 0.625rem;
-    width: 33.3333333333%;
-  }
-}
-@media (min-width: 1280.1px) {
-  .showcase-listProduct .listProduct-item {
-    padding: 0 0.625rem;
-    width: 25%;
+  .showcase-listProduct {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .product {
-  background-color: #ffffff;
-  overflow: hidden;
   position: relative;
-  width: 100%;
+  z-index: 1;
   height: 100%;
-  transition: 0.5s ease-out;
-  background-color: red;
-}
-.product:hover, .product:active, .product:focus {
-  box-shadow: 0 0.05rem 0.5rem rgba(97, 97, 97, 0.2);
-}
-.product-compare {
-  margin: 0.6rem auto;
-}
-.product-compare .compare-button {
-  color: var(--c_general_text2);
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-}
-@media (max-width: 768px) {
-  .product-compare .compare-button {
-    font-size: 0.9rem;
-  }
-}
-.product-compare .compare-button.compare-hidden {
-  display: none;
-}
-.product-compare .compare-button[data-compare=remove] .compare-checkbox::before {
-  content: "";
-  display: inline-table;
-}
-@media (max-width: 768px) {
-  .product-compare .compare-button[data-compare=remove] .compare-checkbox::before {
-    transform: translate(20%, -20%);
-    -webkit-transform: translate(16.5%, -20%);
-    -moz-transform: translate(20%, -20%);
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .product-compare .compare-button[data-compare=remove] .compare-checkbox::before {
-    transform: translate(20%, -32%);
-    -webkit-transform: translate(15%, -37%);
-    -moz-transform: translate(20%, -32%);
-  }
-}
-@media (min-width: 1280.1px) {
-  .product-compare .compare-button[data-compare=remove] .compare-checkbox::before {
-    transform: translate(20%, -32%);
-    -webkit-transform: translate(15%, -38%);
-    -moz-transform: translate(20%, -32%);
-  }
-}
-.product-compare .compare-button-hover {
-  color: var(--c_general_main);
-}
-.product-compare .compare-checkbox {
-  background-color: #fff;
-  border: 0.15em solid rgba(0, 0, 0, 0.3411764706);
-  border-radius: 0.15em;
-  color: currentColor;
-  height: 1.21rem;
-  width: 1.21rem;
-  display: block;
-  margin-right: 0.3rem;
 }
 .product-image {
-  position: relative;
   overflow: hidden;
+  height: 550px;
 }
-.product-link {
-  display: block;
-  position: relative;
-  overflow: hidden;
+.product-image img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 200ms ease-in-out;
 }
-.product-link:focus {
-  outline: 3px solid var(--c_general_secondary);
+.product-image:hover img {
+  transform: scale(1.1);
 }
-.product-img {
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  max-width: 100%;
-  height: auto;
-  width: inherit;
+@media (max-width: 768px) {
+  .product-image {
+    height: 350px;
+  }
+}
+@media (min-width: 768.1px) and (max-width: 1280px) {
+  .product-image {
+    height: 450px;
+  }
 }
 .product-info {
-  flex-grow: 1;
-}
-@media (max-width: 768px) {
-  .product-info {
-    margin: 0.5rem 0.5rem 0.4rem;
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .product-info {
-    margin: 1rem 1.25rem 0.5rem;
-  }
-}
-@media (min-width: 1280.1px) {
-  .product-info {
-    margin: 1rem 1.25rem 0.5rem;
-  }
-}
-.product-name {
-  /* @include small {
-      @include fontInsert(0.75, 400, var(--c_general_text1));
-  }
-  @include medium {
-      @include fontInsert(0.97, 400, var(--c_general_text1));
-  }
-  @include large {
-      @include fontInsert(1, 400, var(--c_general_text1));
-  }*/
-  padding-bottom: 1rem;
-  text-align: center;
-}
-.product-rating {
-  margin-bottom: 1rem;
-}
-.product-rating .rating-icon {
-  padding: 0 0.15rem;
-}
-.product-rating .rating-message {
-  color: var(--c_general_text1);
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  font-variant: normal;
-  text-transform: none;
-  margin-left: 0.5rem;
-  opacity: 1;
-  transition: 0.2s ease-out;
-  text-align: center;
-}
-.product-rating .rating-message:hover {
-  opacity: 0.6;
-}
-.product-price {
-  width: inherit;
-  text-align: center;
-}
-.product-price .price {
-  text-align: center;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .product-price .price-titleStarting {
-    color: var(--c_general_text2);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-  }
-  .product-price .price-old, .product-price .price-current, .product-price .price-installments {
-    color: var(--c_general_text2);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 0.87rem;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-  }
-  .product-price .price-current .value {
-    color: var(--c_general_main);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    font-variant: normal;
-    text-transform: none;
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .product-price .price-titleStarting {
-    color: var(--c_general_text2);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 0.95rem;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-  }
-  .product-price .price-old, .product-price .price-current, .product-price .price-installments {
-    color: var(--c_general_text2);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 0.95rem;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-  }
-  .product-price .price-current .value {
-    color: var(--c_general_main);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    font-variant: normal;
-    text-transform: none;
-  }
-}
-@media (min-width: 1280.1px) {
-  .product-price .price-titleStarting {
-    color: var(--c_general_text2);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 0.95rem;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-  }
-  .product-price .price-old, .product-price .price-current, .product-price .price-installments {
-    color: var(--c_general_text2);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 0.95rem;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-  }
-  .product-price .price-current .value {
-    color: var(--c_general_main);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    font-variant: normal;
-    text-transform: none;
-  }
-}
-.product-price .price-installments {
-  line-height: 1;
-}
-.product-price .price-installments .txt-corparcelas .color {
-  color: var(--c_general_main);
-}
-.product-price .price-installments .txt-cadaparcelas .preco-parc2 {
-  color: var(--c_general_main);
-}
-.product-message {
-  color: var(--c_general_main);
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  font-variant: normal;
-  text-transform: none;
-  background-color: var(--c_general_details);
-  line-height: 1.1;
-  opacity: 1;
-  transition: 0.2s ease-out;
-}
-@media (max-width: 768px) {
-  .product-message {
-    font-size: 0.75rem;
-    padding: 0.9rem 1.5rem;
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .product-message {
-    padding: 0.9rem 2rem;
-  }
-}
-@media (min-width: 1280.1px) {
-  .product-message {
-    padding: 0.9rem 2rem;
-  }
-}
-.product-message:hover {
-  opacity: 0.6;
-}
-.product-tag {
-  flex-wrap: wrap;
-}
-@media (max-width: 768px) {
-  .product-tag {
-    margin: 0.8rem 0 0;
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .product-tag {
-    margin: 1.25rem 1.25rem 0;
-  }
-}
-@media (min-width: 1280.1px) {
-  .product-tag {
-    margin: 1.25rem 1.25rem 0;
-  }
-}
-.product-tag .tag {
-  color: var(--c_general_text_inverted);
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  font-variant: normal;
-  text-transform: none;
-  border-radius: 2px;
-  text-align: center;
-  height: 26px;
-  min-height: 26px;
-}
-@media (max-width: 768px) {
-  .product-tag .tag {
-    margin-bottom: 0.1rem;
-    margin-right: 0.1rem;
-    width: calc(50% - 0.06rem);
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .product-tag .tag {
-    margin-bottom: 0.18rem;
-    margin-right: 0.18rem;
-    width: calc(50% - 0.1rem);
-  }
-}
-@media (min-width: 1280.1px) {
-  .product-tag .tag {
-    margin-bottom: 0.25rem;
-    margin-right: 0.25rem;
-    width: calc(50% - 0.13rem);
-  }
-}
-.product-tag .tag:nth-child(2n) {
-  margin-right: 0;
-}
-.product-tag .tag:only-child {
-  width: 100%;
-}
-.product-tag .tag.tag--center {
-  margin-right: 0;
-  min-height: 26px;
-  width: 100%;
-}
-.product-tag .tag.tag--center img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: auto;
-}
-.product-tag .tag img {
-  aspect-ratio: 16/3;
-  -o-object-fit: fill;
-     object-fit: fill;
-  image-rendering: -webkit-optimize-contrast;
-  max-width: 100%;
-  width: 100%;
-  height: 26px;
-}
-.product-tag .tag.tag--full {
-  margin-right: 0;
-  width: 100%;
-}
-.product-tag .tag.tag--full img {
-  width: 100%;
-}
-.product-tag .tag.tag--full .progressiveDiscount {
-  width: 100%;
-}
-.product-tag .tag-progressiveDiscount .progressiveDiscount {
-  background-color: var(--c_general_secondary);
-  border-radius: 2px;
-  line-height: 0.9;
-  height: -moz-fit-content;
-  height: fit-content;
-  min-height: 26px;
-  max-height: 26px;
-  padding: 0.3rem;
-  flex-shrink: 0;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-@media (max-width: 470px) {
-  .product-tag .tag-progressiveDiscount .progressiveDiscount {
-    font-size: 79.6%;
-  }
-}
-@media (min-width: 768.1px) and (max-width: 900px) {
-  .product-tag .tag-progressiveDiscount .progressiveDiscount {
-    font-size: 79.6%;
-  }
-}
-.product-tag .tag-progressiveDiscount .progressiveDiscount:not(.tag--center *) {
-  min-width: 100%;
-}
-.product .tag-floating {
-  color: var(--c_general_text_inverted);
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 0.88rem;
-  font-weight: 700;
-  font-variant: normal;
-  text-transform: none;
-  background-color: var(--c_general_secondary);
-  border-radius: 50%;
-  line-height: 1;
   position: absolute;
-  height: 2.4rem;
-  width: 2.4rem;
-}
-@media (max-width: 768px) {
-  .product .tag-floating {
-    top: 0.7rem;
-    left: 0.7rem;
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .product .tag-floating {
-    top: 1rem;
-    left: 1rem;
-  }
-}
-@media (min-width: 1280.1px) {
-  .product .tag-floating {
-    top: 1.25rem;
-    left: 1.25rem;
-  }
-}
-@media (max-width: 768px) {
-  .product-button {
-    margin: 1.4rem 0.5rem 0.5rem;
-  }
-  .product-button .button2, .product-button .page-extra .container > table:not(form *) tr:only-child td:only-child a:last-child, .page-extra .container > table:not(form *) tr:only-child td:only-child .product-button a:last-child, .product-button .page-extra .container form tr:only-child td:last-child::before, .page-extra .container form tr:only-child .product-button td:last-child::before, .product-button .page-extra .container form .botao-commerce, .page-extra .container form .product-button .botao-commerce, .product-button .page-listas_busca .container3 .container3 + .board li .label:last-child a .bt-avancar:before, .page-listas_busca .container3 .container3 + .board li .label:last-child a .product-button .bt-avancar:before, .product-button .page-listas_busca .container3 .container3:first-of-type .board .label .bt-avancar:before, .page-listas_busca .container3 .container3:first-of-type .board .label .product-button .bt-avancar:before, .product-button .page-listas_evento .bt-avancar:before, .page-listas_evento .product-button .bt-avancar:before, .product-button .page-listas_evento .container3:last-of-type .board a[href^=listas_criar]:before, .page-listas_evento .container3:last-of-type .board .product-button a[href^=listas_criar]:before, .product-button .page-lista .lista-produtos form .lista-produto-quantidade a, .page-lista .lista-produtos form .lista-produto-quantidade .product-button a,
-.product-button .page-print_lista .lista-produtos form .lista-produto-quantidade a,
-.page-print_lista .lista-produtos form .lista-produto-quantidade .product-button a, .product-button .page-lista .container3:first-child .container2 > .board > div:nth-child(1) a::before, .page-lista .container3:first-child .container2 > .board > div:nth-child(1) .product-button a::before,
-.product-button .page-lista .blocoAlerta + .container3 .container2 > .board > div:nth-child(1) a::before,
-.product-button .page-lista #atualizaLista + .container3 .container2 > .board > div:nth-child(1) a::before,
-.page-lista .blocoAlerta + .container3 .container2 > .board > div:nth-child(1) .product-button a::before,
-.page-lista #atualizaLista + .container3 .container2 > .board > div:nth-child(1) .product-button a::before,
-.product-button .page-print_lista .container3:first-child .container2 > .board > div:nth-child(1) a::before,
-.page-print_lista .container3:first-child .container2 > .board > div:nth-child(1) .product-button a::before,
-.product-button .page-print_lista .blocoAlerta + .container3 .container2 > .board > div:nth-child(1) a::before,
-.product-button .page-print_lista #atualizaLista + .container3 .container2 > .board > div:nth-child(1) a::before,
-.page-print_lista .blocoAlerta + .container3 .container2 > .board > div:nth-child(1) .product-button a::before,
-.page-print_lista #atualizaLista + .container3 .container2 > .board > div:nth-child(1) .product-button a::before, .product-button .page-central_comissoes .form_resgatar_bonus label:last-of-type::before, .page-central_comissoes .form_resgatar_bonus .product-button label:last-of-type::before, .product-button .page-central_comissoes_extrato .saldo_pontos + div form::after, .page-central_comissoes_extrato .saldo_pontos + div .product-button form::after, .product-button .page-listas_criar #lista_criar .container3 .container2 div[style="text-align:right;"]::before, .page-listas_criar #lista_criar .container3 .container2 .product-button div[style="text-align:right;"]::before, .product-button .page-search #Vitrine form input[type=image], .page-search #Vitrine form .product-button input[type=image], .product-button .pageProduct .tabs-reviews #comentario_cliente a[data-logged-user]:not(.tray-hide), .pageProduct .tabs-reviews #comentario_cliente .product-button a[data-logged-user]:not(.tray-hide), .product-button .pageProduct #produto_nao_disp #nao_disp #letMeKnow::before, .pageProduct #produto_nao_disp #nao_disp .product-button #letMeKnow::before, .product-button .page-comparador .comparatorTabs ul .aberta, .page-comparador .comparatorTabs ul .product-button .aberta, .product-button .page-register .botao-commerce, .page-register .product-button .botao-commerce, .product-button .page-login .caixa-login fieldset .botao-commerce, .page-login .caixa-login fieldset .product-button .botao-commerce,
-.product-button .page-login .caixa-cadastro fieldset .botao-commerce,
-.page-login .caixa-cadastro fieldset .product-button .botao-commerce, .product-button .modal .botao-continuar-comprando .botao-commerce-img, .modal .botao-continuar-comprando .product-button .botao-commerce-img, .product-button .modal #concorda-termo #acceptTerm, .modal #concorda-termo .product-button #acceptTerm, .product-button .modal #send_link button.perguntasProdutoBTimg, .modal #send_link .product-button button.perguntasProdutoBTimg, .product-button .modal .modal-content #div_atualiza form .advancedSearchFormBTimg, .modal .modal-content #div_atualiza form .product-button .advancedSearchFormBTimg {
-    font-size: 0.75rem;
-    padding: 1rem 1.5rem;
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .product-button {
-    margin: 1.35rem 1.25rem 0.5rem;
-  }
-}
-@media (min-width: 1280.1px) {
-  .product-button {
-    margin: 1.35rem 1.25rem 0.5rem;
-  }
-}
-.product-button.u-marginNone {
-  margin: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .banner {
