@@ -32,9 +32,11 @@
 
     {% if products | length > 0 %}
         <section class=" showcase">
-            <h2 class="section-title">
-                {{ title }}
-            </h2>
+            <div class="container">
+                <h2 class="section-title">
+                    {{ title }}
+                </h2>
+            </div>
 
             <ul class="showcase-listProduct">
                 {% for item in products %}
