@@ -147,11 +147,11 @@ $transit_slow: 0.5s ease-out;
 %style-scroll {
     /// Firefox
     scrollbar-width: thin;
-    scrollbar-color: var(--c_general_background) #f7f7f777;
+    scrollbar-color: var(--c_general_secondary) #e6e6e6;
     transition: $transit_slow;
 
     &:active {
-        scrollbar-color: var(--c_general_secondary) #f7f7f777;
+        scrollbar-color: var(--c_general_secondary) #e6e6e6;
     }
 
     /// Chrome, Edge, and Safari
@@ -162,13 +162,13 @@ $transit_slow: 0.5s ease-out;
 
     /* Track */
     &::-webkit-scrollbar-track {
-        background: #f7f7f777;
+        background: #e6e6e6;
     }
 
     /* Handle */
     &::-webkit-scrollbar-thumb {
         border-radius: calc(10px - 3px);
-        background: var(--c_general_background);
+        background: var(--wm_gray-300);
         transition: $transit_slow;
 
         &:active {

@@ -1,0 +1,92 @@
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <header class="offcanvas-header">
+        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="ph-x"></i>
+        </button>
+        <strong>Sacola de compras</strong>
+    </header>
+    <div class="offcanvas-body">
+        <div class="sideCart_products_list">
+            {% for product in cart_data.products %}
+                <p>{{ product.name }} - {{ product.price }}</p>
+            {% endfor %}
+
+        
+
+
+            {# <div class="sideCart_product">
+                <div class="thumb">
+                    <img src="{{ themePath }}img/product1.png" alt="">
+                </div>
+                <div class="product_body">
+                    <header>
+                        <strong>Camiseta Calvin Klein Branca estampada GG</strong>
+                        <button>
+                            <i class="ph-trash"></i>
+                        </button>
+                    </header>
+                    <footer>
+                        <div class="amount">
+                            <button class="minus">
+                                <i class="ph-minus"></i>
+                            </button>
+                            <span class="productAmount_view">1</span>
+                            <input type="hidden" id="productAmount" name="productAmount">
+                            <button class="plus">
+                                <i class="ph-plus"></i>
+                            </button>
+                        </div>
+                        <div class="price">
+                            <span>R$ 2.000,00</span>
+                            <strong>R$ 1.500,00</strong>
+                        </div>
+                    </footer>
+                </div>
+            </div> #}
+        </div>
+        
+        <div class="total">
+            <div>
+                <span>Subtotal</span>
+                <span>R$ 6.000,00</span>
+            </div>
+            <div>
+                <span>Desconto</span>
+                <span>R$ 5.000,00</span>
+            </div>
+            <div>
+                <strong>Total</strong>
+                <strong>R$ 1.000,00</strong>
+            </div>
+
+            <a href="{{ links.cart }}" class="cta">
+                Finalizar compra
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript">  
+    let cart_data = []
+    setTimeout(() => {
+        var dataSession =  $("html").attr("data-session");
+        $.ajax({
+            method: "GET",
+            url: "/web_api/cart/"+dataSession
+        }).done(function( response, textStatus, jqXHR ) {
+            cart_data = response
+            console.log(cart_data);
+        }).fail(function( jqXHR, status, errorThrown ){
+            var response = $.parseJSON( jqXHR.responseText );
+            console.log(response);
+        });
+    }, 2000)
+    cart_data.map(element => {
+        console.log(element.product_name)
+    })
+    '{% set cart_data = cart_data %}'
+    console.log('VARIAVEL TWIG', JSON.parse('{{ cart_data|json_encode|raw }}'));
+</script>
