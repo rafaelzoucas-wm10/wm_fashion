@@ -180,7 +180,7 @@ $transit_slow: 0.5s ease-out;
 %style-scroll-big {
     /// Firefox
     scrollbar-width: auto;
-    scrollbar-color: var(--c_general_background) #f7f7f777;
+    scrollbar-color: var(--wm_gray-300) #f7f7f777;
     transition: $transit_slow;
 
     &:active {
@@ -201,7 +201,7 @@ $transit_slow: 0.5s ease-out;
     /* Handle */
     &::-webkit-scrollbar-thumb {
         border-radius: calc(16px - 3px);
-        background: var(--c_general_background);
+        background: var(--wm_gray-300);
         transition: $transit_slow;
 
         &:active {

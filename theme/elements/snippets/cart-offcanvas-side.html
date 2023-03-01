@@ -8,20 +8,13 @@
     </header>
     <div class="offcanvas-body">
         <div class="sideCart_products_list">
-            {% for product in cart_data.products %}
-                <p>{{ product.name }} - {{ product.price }}</p>
-            {% endfor %}
-
-        
-
-
-            {# <div class="sideCart_product">
+            <div class="sideCart_product sideCart_product_template" style="display: none;">
                 <div class="thumb">
-                    <img src="{{ themePath }}img/product1.png" alt="">
+                    <img src="#" alt="">
                 </div>
                 <div class="product_body">
                     <header>
-                        <strong>Camiseta Calvin Klein Branca estampada GG</strong>
+                        <strong class="productName_view">{product.name}</strong>
                         <button>
                             <i class="ph-trash"></i>
                         </button>
@@ -31,19 +24,18 @@
                             <button class="minus">
                                 <i class="ph-minus"></i>
                             </button>
-                            <span class="productAmount_view">1</span>
+                            <span class="productAmount_view">{product.amount}</span>
                             <input type="hidden" id="productAmount" name="productAmount">
                             <button class="plus">
                                 <i class="ph-plus"></i>
                             </button>
                         </div>
                         <div class="price">
-                            <span>R$ 2.000,00</span>
-                            <strong>R$ 1.500,00</strong>
+                            <strong class="price_view">{product.price}</strong>
                         </div>
                     </footer>
                 </div>
-            </div> #}
+            </div>
         </div>
         
         <div class="total">
@@ -57,7 +49,7 @@
             </div>
             <div>
                 <strong>Total</strong>
-                <strong>R$ 1.000,00</strong>
+                <strong data-cart="price"></strong>
             </div>
 
             <a href="{{ links.cart }}" class="cta">
@@ -70,23 +62,39 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script type="text/javascript">  
-    let cart_data = []
-    setTimeout(() => {
-        var dataSession =  $("html").attr("data-session");
-        $.ajax({
-            method: "GET",
-            url: "/web_api/cart/"+dataSession
-        }).done(function( response, textStatus, jqXHR ) {
-            cart_data = response
-            console.log(cart_data);
-        }).fail(function( jqXHR, status, errorThrown ){
-            var response = $.parseJSON( jqXHR.responseText );
+    $(document).ready(async function () {
+        var dataSession = $("html").attr("data-session");
+        var cart_data = [];
+    
+        try {
+            var response = await $.ajax({
+                method: "GET",
+                url: "/web_api/cart/" + dataSession
+            });
+            cart_data = response;
             console.log(response);
-        });
-    }, 2000)
-    cart_data.map(element => {
-        console.log(element.product_name)
-    })
-    '{% set cart_data = cart_data %}'
-    console.log('VARIAVEL TWIG', JSON.parse('{{ cart_data|json_encode|raw }}'));
+        } catch (error) {
+            var response = $.parseJSON(error.responseText);
+            console.log(response);
+        }
+    
+        if (cart_data && cart_data.length > 0) {
+            // cria um elemento HTML oculto contendo a estrutura do sideCart_product
+            var template = $('.sideCart_product_template').clone().removeClass('sideCart_product_template').css('display','block');
+
+            cart_data.map(element => {
+                // clona o template
+                var sideCart_product = template.clone();
+
+                // substitui as informações da cópia pelo objeto de dados da iteração do map()
+                sideCart_product.find('.thumb img').attr('src', element.Cart.product_image.thumbs);
+                sideCart_product.find('.productName_view').text(element.Cart.product_name);
+                sideCart_product.find('.productAmount_view').text(element.Cart.quantity);
+                sideCart_product.find('.price_view').text('R$ ' + (20.5).toFixed(2));
+
+                // exibe a cópia na lista de produtos
+                $('.sideCart_products_list').append(sideCart_product);
+            });
+        }
+    });    
 </script>
