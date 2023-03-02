@@ -2,9 +2,7 @@
     <div class="header-top">
         <div class="header-content">
             <button class="header-button mobile" data-toggle="closed" data-target="#menu-mobile" title="Abrir Menu" aria-label="Abrir o menu">
-                <div class="button-line"></div>
-                <div class="button-line"></div>
-                <div class="button-line"></div>
+                <i class="ph-list"></i>
             </button>
 
             <a class="header-logo" href="{{ store.url }}" title="Logo da loja" aria-label="logo da {{ store.name }}">
@@ -25,8 +23,7 @@
                 {% element 'snippets/header-search' %}
                                 
                 <div class="header-account">
-    
-                    <span class="icon-account" aria-hidden="true"></span>
+                    <i class="ph-user"></i>
     
                     <div class="tray-hide logged" data-logged-user="true">
                         <span class="account-text">Ol&aacute;, <span data-customer="name"></span></span>
@@ -46,12 +43,14 @@
                     </div>
                 </div>
                 
-                <button class="header-cart-button" title="Carrinho"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                    <span class="icon-cart" aria-hidden="true"></span>
-                    <span class="cart-quantity" data-cart="amount">0</span>
-                </button>
-
-                {% element 'snippets/cart-offcanvas-side' %}
+                <div class="header-offcanvas-cart">
+                    <button class="header-cart-button" title="Carrinho"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                        <i class="ph-shopping-cart-simple"></i>
+                        <span class="cart-quantity" data-cart="amount">0</span>
+                    </button>
+    
+                    {% element 'snippets/cart-offcanvas-side' %}
+                </div>
             </div>
         </div>
     </div>

@@ -1,10 +1,11 @@
 <!-- Offcanvas -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
     <header class="offcanvas-header">
-        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-            X
-        </button>
         <strong>Sacola de compras</strong>
+        
+        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="ph-x"></i>
+        </button>
     </header>
     <div class="offcanvas-body">
         <div class="sideCart_products_list">
@@ -59,6 +60,7 @@
     </div>
 </div>
 
+{# jQuery #}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script type="text/javascript">  
@@ -80,7 +82,7 @@
     
         if (cart_data && cart_data.length > 0) {
             // cria um elemento HTML oculto contendo a estrutura do sideCart_product
-            var template = $('.sideCart_product_template').clone().removeClass('sideCart_product_template').css('display','block');
+            var template = $('.sideCart_product_template').clone().removeClass('sideCart_product_template').css('display','flex');
 
             cart_data.map(element => {
                 // clona o template
