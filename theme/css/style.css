@@ -2436,6 +2436,51 @@ div.Seguro {
   height: 100%;
 }
 
+html ::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+html ::-webkit-scrollbar-track {
+  background: var(--wm_gray-100);
+}
+html ::-webkit-scrollbar-thumb {
+  background: var(--wm_gray-300);
+  border-radius: 2rem;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  opacity: 0.5;
+}
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(45deg, var(--c_general_main) 0%, var(--wm_gray-600) 51%, var(--c_general_main) 100%);
+  border: none;
+  color: var(--wm_white);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 200ms;
+  background-size: 200% auto;
+  font-weight: 700;
+}
+.cta .ph-arrow-right {
+  transition: all 150ms ease-in-out;
+}
+.cta:hover {
+  background-position: calc(100% - 5px) center;
+  text-decoration: none;
+}
+.cta:hover .ph-arrow-right {
+  transform: translateX(1rem);
+}
+.cta:active {
+  transform: scale(0.95);
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -2839,7 +2884,6 @@ div.Seguro {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1rem;
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -2856,10 +2900,10 @@ div.Seguro {
 }
 .header-offcanvas-cart .offcanvas .offcanvas-body .sideCart_product .thumb {
   overflow: hidden;
-  width: 90px;
-  min-width: 90px;
-  height: 90px;
-  min-height: 90px;
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
+  min-height: 120px;
 }
 .header-offcanvas-cart .offcanvas .offcanvas-body .sideCart_product img {
   width: 100%;
@@ -3000,7 +3044,7 @@ div.Seguro {
 .header-offcanvas-cart .offcanvas .total > div strong {
   font-size: 1.5rem;
 }
-.header-offcanvas-cart .offcanvas .total button {
+.header-offcanvas-cart .offcanvas .total a.cta {
   width: 100%;
 }
 .header-menu {

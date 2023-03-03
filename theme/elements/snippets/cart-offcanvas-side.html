@@ -41,14 +41,6 @@
         
         <div class="total">
             <div>
-                <span>Subtotal</span>
-                <span>R$ 6.000,00</span>
-            </div>
-            <div>
-                <span>Desconto</span>
-                <span>R$ 5.000,00</span>
-            </div>
-            <div>
                 <strong>Total</strong>
                 <strong data-cart="price"></strong>
             </div>
@@ -87,12 +79,14 @@
             cart_data.map(element => {
                 // clona o template
                 var sideCart_product = template.clone();
+                const cart = element.Cart
+                const price = (parseFloat(cart.price) * parseFloat(cart.quantity)).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
                 // substitui as informações da cópia pelo objeto de dados da iteração do map()
-                sideCart_product.find('.thumb img').attr('src', element.Cart.product_image.thumbs["90"].http);
-                sideCart_product.find('.productName_view').text(element.Cart.product_name);
-                sideCart_product.find('.productAmount_view').text(element.Cart.quantity);
-                sideCart_product.find('.price_view').text('R$ ' + (20.5).toFixed(2));
+                sideCart_product.find('.thumb img').attr('src', cart.product_image.thumbs["180"].http);
+                sideCart_product.find('.productName_view').text(cart.product_name);
+                sideCart_product.find('.productAmount_view').text(cart.quantity);
+                sideCart_product.find('.price_view').text(price);
 
                 // exibe a cópia na lista de produtos
                 $('.sideCart_products_list').append(sideCart_product);

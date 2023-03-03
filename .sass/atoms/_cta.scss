@@ -1,0 +1,36 @@
+@mixin cta-styles {
+    @include flex(row, center, center, 1rem);
+
+    padding: 1rem 2rem;
+    background-image: linear-gradient(45deg, var(--c_general_main) 0%, var(--wm_gray-600)  51%, var(--c_general_main)  100%);
+    border: none;
+    
+    color: var(--wm_white);
+
+    text-align: center;
+    text-transform: uppercase;
+    transition: 200ms;
+    background-size: 200% auto;
+    font-weight: 700;
+
+    .ph-arrow-right {
+        transition: all 150ms ease-in-out;
+    }
+    
+    &:hover {
+        background-position: calc(100% - 5px) center;
+        text-decoration: none;
+
+        .ph-arrow-right {
+            transform: translateX(1rem);
+        }
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.cta {
+    @include cta-styles;
+}
