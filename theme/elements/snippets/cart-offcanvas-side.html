@@ -89,7 +89,7 @@
                 var sideCart_product = template.clone();
 
                 // substitui as informações da cópia pelo objeto de dados da iteração do map()
-                sideCart_product.find('.thumb img').attr('src', element.Cart.product_image.thumbs);
+                sideCart_product.find('.thumb img').attr('src', element.Cart.product_image.thumbs["90"].http);
                 sideCart_product.find('.productName_view').text(element.Cart.product_name);
                 sideCart_product.find('.productAmount_view').text(element.Cart.quantity);
                 sideCart_product.find('.price_view').text('R$ ' + (20.5).toFixed(2));
