@@ -2888,6 +2888,7 @@ html ::-webkit-scrollbar-thumb:hover {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  padding-right: 1rem;
 }
 .header-offcanvas-cart .offcanvas .offcanvas-body .sideCart_product {
   display: flex;
