@@ -31,10 +31,12 @@
     {% endif %}
 
     {% if products | length > 0 %}
-        <section class="section showcase">
-            <h2 class="section-title">
-                {{ title }}
-            </h2>
+        <section class=" showcase">
+            <div class="container">
+                <h2 class="section-title">
+                    {{ title }}
+                </h2>
+            </div>
 
             <ul class="showcase-listProduct">
                 {% for item in products %}
@@ -48,5 +50,4 @@
             </ul>
         </section>
     {% endif %}
-
 {% endif %}
