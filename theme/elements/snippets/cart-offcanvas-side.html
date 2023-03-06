@@ -16,7 +16,7 @@
                 <div class="product_body">
                     <header>
                         <strong class="productName_view">{product.name}</strong>
-                        <button>
+                        <button class="removeProduct">
                             <i class="ph-trash"></i>
                         </button>
                     </header>
@@ -55,14 +55,65 @@
 {# jQuery #}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-{# DELETE #}
-<script src="../../js/deleteProductFromCart.min.js"></script>
-
 {# GET #}
-<script src="../../js/getProductsInCart.min.js"></script>
-
-<script>    
+<script type="text/javascript">  
 $(document).ready(async function () {
+    var dataSession = $("html").attr("data-session");
+    var cart_data = [];
 
-});
+    try {
+        var response = await $.ajax({
+            method: "GET",
+            url: "/web_api/cart/" + dataSession
+        });
+        cart_data = response;
+        console.log(response);
+    } catch (error) {
+        var response = $.parseJSON(error.responseText);
+        console.log(response);
+    }
+
+    if (cart_data && cart_data.length > 0) {
+        // cria um elemento HTML oculto contendo a estrutura do sideCart_product
+        var template = $('.sideCart_product_template').clone().removeClass('sideCart_product_template').css('display','flex');
+
+        cart_data.map(element => {
+            // clona o template
+            var sideCart_product = template.clone();
+            const cart = element.Cart
+            const price = (parseFloat(cart.price) * parseFloat(cart.quantity)).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+
+            // substitui as informações da cópia pelo objeto de dados da iteração do map()
+            sideCart_product.find('.thumb img').attr('src', cart.product_image.thumbs["180"].http);
+            sideCart_product.find('.productName_view').text(cart.product_name);
+            sideCart_product.find('.productAmount_view').text(cart.quantity);
+            sideCart_product.find('.price_view').text(price);
+            sideCart_product.find('.removeProduct').attr("productID", cart.product_id);
+
+            // exibe a cópia na lista de produtos
+            $('.sideCart_products_list').append(sideCart_product);
+        });
+    }
+});    
+</script>
+
+{# REMOVE #}
+<script type="text/javascript">
+    $(document).on("click", ".removeProduct", function() {
+        const dataSession = $("html").attr("data-session");
+        const productID = $(this).attr("productID")
+        removeProductFromCart(productID, dataSession);
+    });      
+    
+    function removeProductFromCart(productID, dataSession) {
+        $.ajax({
+          method: "DELETE",
+          url: "/web_api/carts/"+dataSession+"/"+productID
+        }).done(function( response, textStatus, jqXHR ) {
+          console.log(response);
+        }).fail(function( jqXHR, status, errorThrown ){
+          var response = $.parseJSON( jqXHR.responseText );
+          console.log(response);
+        });
+    }
 </script>
