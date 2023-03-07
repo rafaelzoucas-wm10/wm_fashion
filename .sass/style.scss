@@ -147,11 +147,11 @@ $transit_slow: 0.5s ease-out;
 %style-scroll {
     /// Firefox
     scrollbar-width: thin;
-    scrollbar-color: var(--c_general_background) #f7f7f777;
+    scrollbar-color: var(--c_general_secondary) #e6e6e6;
     transition: $transit_slow;
 
     &:active {
-        scrollbar-color: var(--c_general_secondary) #f7f7f777;
+        scrollbar-color: var(--c_general_secondary) #e6e6e6;
     }
 
     /// Chrome, Edge, and Safari
@@ -162,13 +162,13 @@ $transit_slow: 0.5s ease-out;
 
     /* Track */
     &::-webkit-scrollbar-track {
-        background: #f7f7f777;
+        background: #e6e6e6;
     }
 
     /* Handle */
     &::-webkit-scrollbar-thumb {
         border-radius: calc(10px - 3px);
-        background: var(--c_general_background);
+        background: var(--wm_gray-300);
         transition: $transit_slow;
 
         &:active {
@@ -180,7 +180,7 @@ $transit_slow: 0.5s ease-out;
 %style-scroll-big {
     /// Firefox
     scrollbar-width: auto;
-    scrollbar-color: var(--c_general_background) #f7f7f777;
+    scrollbar-color: var(--wm_gray-300) #f7f7f777;
     transition: $transit_slow;
 
     &:active {
@@ -201,7 +201,7 @@ $transit_slow: 0.5s ease-out;
     /* Handle */
     &::-webkit-scrollbar-thumb {
         border-radius: calc(16px - 3px);
-        background: var(--c_general_background);
+        background: var(--wm_gray-300);
         transition: $transit_slow;
 
         &:active {
@@ -758,7 +758,7 @@ div.Seguro {
 }
 
 ///Imports of SASS parts:
-@import 'mixins/flexbox', 'elements/header', 'elements/footer', 'elements/showcaseProduct', 'elements/banner', 'default',
+@import 'atoms/scrollbar', 'atoms/flexbox', 'atoms/cta', 'elements/header', 'elements/footer', 'elements/showcaseProduct', 'elements/banner', 'default',
     'elements/alert-store', 'pages/home', 'pages/tray/modals-general', 'elements/brands-list', 'elements/pagination',
     'elements/breadcrumb', 'pages/catalog-search', 'elements/smartfilter', 'pages/tray/newsletter-confirmation',
     'pages/tray/login', 'pages/tray/page-register', 'pages/tray/compare', 'pages/tray/custom', 'pages/pageProduct',

@@ -1,0 +1,19 @@
+html {
+  ::-webkit-scrollbar {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--wm_gray-100);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--wm_gray-300);
+    border-radius: 2rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 0.5;
+  }      
+}

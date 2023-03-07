@@ -2,9 +2,7 @@
     <div class="header-top">
         <div class="header-content">
             <button class="header-button mobile" data-toggle="closed" data-target="#menu-mobile" title="Abrir Menu" aria-label="Abrir o menu">
-                <div class="button-line"></div>
-                <div class="button-line"></div>
-                <div class="button-line"></div>
+                <i class="ph-list"></i>
             </button>
 
             <a class="header-logo" href="{{ store.url }}" title="Logo da loja" aria-label="logo da {{ store.name }}">
@@ -25,8 +23,7 @@
                 {% element 'snippets/header-search' %}
                                 
                 <div class="header-account">
-    
-                    <span class="icon-account" aria-hidden="true"></span>
+                    <i class="ph-user"></i>
     
                     <div class="tray-hide logged" data-logged-user="true">
                         <span class="account-text">Ol&aacute;, <span data-customer="name"></span></span>
@@ -45,162 +42,14 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="header-offcanvas-cart">
+                    <button class="header-cart-button" title="Carrinho"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                        <i class="ph-shopping-cart-simple"></i>
+                        <span class="cart-quantity" data-cart="amount">0</span>
+                    </button>
     
-                <button class="header-cart" title="Carrinho"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                    <span class="icon-cart" aria-hidden="true"></span>
-                    <span class="cart-quantity" data-cart="amount">0</span>
-                </button>
-
-                <!-- Offcanvas -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
-                    <header class="offcanvas-header">
-                        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-                            <i class="ph-x"></i>
-                        </button>
-                        <strong>Sacola de compras</strong>
-                    </header>
-                    <div class="offcanvas-body">
-                        <div class="sideCart_products_list">
-                            <div class="sideCart_product">
-                                <div class="thumb">
-                                    <img src="{{ themePath }}img/product1.png" alt="">
-                                </div>
-                                <div class="product_body">
-                                    <header>
-                                        <strong>Camiseta Calvin Klein Branca estampada GG</strong>
-                                        <button>
-                                            <i class="ph-trash"></i>
-                                        </button>
-                                    </header>
-                                    <footer>
-                                        <div class="amount">
-                                            <button class="minus">
-                                                <i class="ph-minus"></i>
-                                            </button>
-                                            <span class="productAmount_view">1</span>
-                                            <input type="hidden" id="productAmount" name="productAmount">
-                                            <button class="plus">
-                                                <i class="ph-plus"></i>
-                                            </button>
-                                        </div>
-                                        <div class="price">
-                                            <span>R$ 2.000,00</span>
-                                            <strong>R$ 1.500,00</strong>
-                                        </div>
-                                    </footer>
-                                </div>
-                            </div>
-                            <div class="sideCart_product">
-                                <div class="thumb">
-                                    <img src="{{ themePath }}img/product2.png" alt="">
-                                </div>
-                                <div class="product_body">
-                                    <header>
-                                        <strong>Camiseta Calvin Klein Branca estampada GG</strong>
-                                        <button>
-                                            <i class="ph-trash"></i>
-                                        </button>
-                                    </header>
-                                    <footer>
-                                        <div class="amount">
-                                            <button class="minus">
-                                                <i class="ph-minus"></i>
-                                            </button>
-                                            <span class="productAmount_view">1</span>
-                                            <input type="hidden" id="productAmount" name="productAmount">
-                                            <button class="plus">
-                                                <i class="ph-plus"></i>
-                                            </button>
-                                        </div>
-
-                                        <div class="price">
-                                            <span>R$ 2.000,00</span>
-                                            <strong>R$ 150.000,00</strong>
-                                        </div>
-                                    </footer>
-                                </div>
-                            </div>
-                            <div class="sideCart_product">
-                                <div class="thumb">
-                                    <img src="{{ themePath }}img/product3.png" alt="">
-                                </div>
-                                <div class="product_body">
-                                    <header>
-                                        <strong>Camiseta Calvin Klein Branca estampada GG</strong>
-                                        <button>
-                                            <i class="ph-trash"></i>
-                                        </button>
-                                    </header>
-                                    <footer>
-                                        <div class="amount">
-                                            <button class="minus">
-                                                <i class="ph-minus"></i>
-                                            </button>
-                                            <span class="productAmount_view">1</span>
-                                            <input type="hidden" id="productAmount" name="productAmount">
-                                            <button class="plus">
-                                                <i class="ph-plus"></i>
-                                            </button>
-                                        </div>
-
-                                        <div class="price">
-                                            <span>R$ 2.000,00</span>
-                                            <strong>R$ 1.500,00</strong>
-                                        </div>
-                                    </footer>
-                                </div>
-                            </div>
-                            <div class="sideCart_product">
-                                <div class="thumb">
-                                    <img src="{{ themePath }}img/product4.png" alt="">
-                                </div>
-                                <div class="product_body">
-                                    <header>
-                                        <strong>Camiseta Calvin Klein Branca estampada GG</strong>
-                                        <button>
-                                            <i class="ph-trash"></i>
-                                        </button>
-                                    </header>
-                                    <footer>
-                                        <div class="amount">
-                                            <button class="minus">
-                                                <i class="ph-minus"></i>
-                                            </button>
-                                            <span class="productAmount_view">1</span>
-                                            <input type="hidden" id="productAmount" name="productAmount">
-                                            <button class="plus">
-                                                <i class="ph-plus"></i>
-                                            </button>
-                                        </div>
-
-                                        <div class="price">
-                                            <span>R$ 2.000,00</span>
-                                            <strong>R$ 1.500,00</strong>
-                                        </div>
-                                    </footer>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="total">
-                            <div>
-                                <span>Subtotal</span>
-                                <span>R$ 6.000,00</span>
-                            </div>
-                            <div>
-                                <span>Desconto</span>
-                                <span>R$ 5.000,00</span>
-                            </div>
-                            <div>
-                                <strong>Total</strong>
-                                <strong>R$ 1.000,00</strong>
-                            </div>
-
-                            <a href="{{ links.cart }}" class="cta">
-                                Finalizar compra
-                            </a>
-                        </div>
-                    </div>
+                    {% element 'snippets/cart-offcanvas-side' %}
                 </div>
             </div>
         </div>
