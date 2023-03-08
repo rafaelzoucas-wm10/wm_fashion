@@ -14,10 +14,10 @@
         line-height: 0.9;
         word-break: break-word;
         width: 100%;
-    }
 
-    .icon-tag {
-        @extend %flex-center-center;
-        margin-right: 0.6rem;
+        strong {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
     }
 }

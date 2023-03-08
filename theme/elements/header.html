@@ -1,23 +1,25 @@
 <header data-header="scroll" class="header">
     <div class="header-top">
         <div class="header-content">
-            <button class="header-button mobile" data-toggle="closed" data-target="#menu-mobile" title="Abrir Menu" aria-label="Abrir o menu">
-                <i class="ph-list"></i>
-            </button>
-
-            <a class="header-logo" href="{{ store.url }}" title="Logo da loja" aria-label="logo da {{ store.name }}">
-                {% if settings.logo %}
-                    <img class="header-image" src="{{ asset(settings.logo) }}"
-                        alt="{{ store.name }}"
-                        width="222" height="55"
-                    />
-                {% endif %} 
-                {% if 'home' in pages.current %}
-                    <h1 class="header-title">{{ store.name }}</h1>
-                {% else %}
-                    <h6 class="header-title">{{ store.name }}</h6>
-                {% endif %}
-            </a>
+            <div class="header-logo-and-menu">
+                <a class="header-logo" href="{{ store.url }}" title="Logo da loja" aria-label="logo da {{ store.name }}">
+                    {% if settings.logo %}
+                        <img class="header-image" src="{{ asset(settings.logo) }}"
+                            alt="{{ store.name }}"
+                            width="222" height="55"
+                        />
+                    {% endif %} 
+                    {% if 'home' in pages.current %}
+                        <h1 class="header-title">{{ store.name }}</h1>
+                    {% else %}
+                        <h6 class="header-title">{{ store.name }}</h6>
+                    {% endif %}
+                </a>
+                
+                <button class="header-button mobile" data-toggle="closed" data-target="#menu-mobile" title="Abrir Menu" aria-label="Abrir o menu">
+                    <i class="ph-list"></i>
+                </button>
+            </div>
             
             <div class="header-actions">
                 {% element 'snippets/header-search' %}

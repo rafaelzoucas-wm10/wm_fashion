@@ -10,7 +10,7 @@
 
     &.u-effectHeader {
         @include small {
-            .header-logo {
+            .header-logo-and-menu {
                 display: none;
             }
 
@@ -20,7 +20,6 @@
 
                 .header-search {
                     order: unset;
-                    width: 70%;
                 }
             }
         }
@@ -84,19 +83,34 @@
         display: flex;
         flex-direction: row;
         gap: 2rem;
+
+        @include small {
+            width: 100%;
+            flex-direction: row-reverse
+        }
     }
 
     &-search {
         @extend %flex-center-center;
         position: relative;
         transition: width 0.3s ease-out;
-        min-width: 350px;
-        width: 100%;
 
+        width: 100%;
+        
         @include small {
             order: 1;
             margin: 0;
+            
             max-width: none;
+            min-width: none;
+        }
+
+        @include medium {
+            min-width: 350px;
+        }
+        
+        @include large {
+            min-width: 350px;
         }
 
         .search {
@@ -289,6 +303,7 @@
                         img {
                             width: 100%;
                             height: 100%;
+                            object-fit: cover
                         }
                     }
 
@@ -838,17 +853,26 @@
         }
     }
 
-    &-button.mobile {
-        @include small {
-            display: flex;
-        }
+    &-logo-and-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
 
-        @include medium {
-            display: none;
-        }
+        width: 100%;
 
-        @include large {
-            display: none;
+        .header-button.mobile {
+            @include small {
+                display: flex;
+            }
+    
+            @include medium {
+                display: none;
+            }
+    
+            @include large {
+                display: none;
+            }
         }
     }
 
@@ -1026,9 +1050,6 @@
         justify-content: space-between;
         flex-grow: 0;
         flex-shrink: 0;
-        width: 20px;
-        height: 18px;
-        margin-right: 1rem;
         cursor: pointer;
 
         .button-line {

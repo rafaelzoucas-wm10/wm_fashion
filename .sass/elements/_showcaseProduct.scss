@@ -159,5 +159,10 @@
         height: 50%;
         
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+        
+        @include small {
+            display: none;
+        }
     }
+
 }
