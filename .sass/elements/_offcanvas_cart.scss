@@ -181,6 +181,19 @@
             }
         }
     }
+    .theres-nothing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        background-color: red;
+
+        .ph-handbag {
+            font-size: 3rem;
+        }
+    }
 
     .total {
         @include flex(column, center, center, 1rem);

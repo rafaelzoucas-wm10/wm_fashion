@@ -8,6 +8,15 @@
         </button>
     </header>
     <div class="offcanvas-body">
+        <div class="theres-nothing" style="display: none;">
+            <div>
+                <i class="ph-handbag"></i>
+                <h1>Sua sacola está vazia.</h1>
+            </div>
+
+            <button class="cta">Escolher produtos</button>
+        </div>
+
         <div class="sideCart_products_list">
             <div class="sideCart_product sideCart_product_template" style="display: none;">
                 <div class="thumb">
@@ -93,6 +102,9 @@ $(document).ready(async function () {
             // exibe a cópia na lista de produtos
             $('.sideCart_products_list').append(sideCart_product);
         });
+    } else {
+        $('.sideCart_products_list').toggle()
+        $('.theres-nothing').css("display", "flex")
     }
 });    
 </script>
@@ -102,6 +114,7 @@ $(document).ready(async function () {
     $(document).on("click", ".removeProduct", function() {
         const dataSession = $("html").attr("data-session");
         const productID = $(this).attr("productID")
+
         removeProductFromCart(productID, dataSession);
     });      
     

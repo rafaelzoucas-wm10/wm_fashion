@@ -65,7 +65,8 @@
             type="button" aria-label="Ver Produto"
         >
             {% if product.available and (product.stock > 0 or settings.without_stock_sale) and not product.upon_request %}
-                Adicionar à sacola 
+                <div class="ph-plus"></div>
+                adicionar 
             {% endif %}
         </button>
     </div>

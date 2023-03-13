@@ -1,5 +1,5 @@
 {% set brands = Brands() %}
-<section class="section brands" data-slides="brands">
+<section class="section brands container" data-slides="brands">
     <div class="brands-content swiper">
         <div class="brands-list swiper-wrapper">
             {% for brand in brands %}
@@ -12,6 +12,7 @@
                 </div>
             {% endfor %}
         </div>
+
         <div class="swiper-pagination"></div>
     </div>
 </section>
