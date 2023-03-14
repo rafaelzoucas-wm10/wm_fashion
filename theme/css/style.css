@@ -3094,6 +3094,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 .header-offcanvas-cart .offcanvas .offcanvas-body .theres-nothing h1 {
   font-weight: 700;
+  text-align: center;
 }
 .header-offcanvas-cart .offcanvas .offcanvas-body .theres-nothing .ph-handbag {
   font-size: 5rem;
