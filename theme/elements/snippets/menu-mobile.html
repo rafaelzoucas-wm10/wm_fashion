@@ -1,6 +1,7 @@
 <aside class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <header class="offcanvas-header">
-        <h2 class="offcanvas-title" id="offcanvasMenuLabel">MENU</h2>
+        <strong class="offcanvas-title" id="offcanvasMenuLabel">MENU</strong>
+
         <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="ph-x"></div>
         </button>
@@ -8,6 +9,8 @@
   
     <div class="offcanvas-body">
         <div class="menuMobile-account">
+
+            {# SE ESTÁ LOGADO #}
             <div class="tray-hide account-item logged" data-logged-user="true">
                 <button class="account-button" data-toggle="account">
                     <span class="account-text">Ol&aacute;, <span data-customer="name"></span></span>
@@ -20,17 +23,17 @@
                     <a class="account-link" href="{{ links.logout }}" title="Sair">Sair</a>
                 </div>
             </div>
+
+            {# SE NÃO ESTÁ LOGADO #}
             <div class="tray-hide account-item loggedout" data-logged-user="false">
-                <button class="account-button" data-toggle="account">
-                    <span class="account-text">Minha Conta</span>
-                    <span class="icon-arrow-simple" aria-hidden="true"></span>
-                </button>
-                <div class="account-access">
-                    <span class="icon-account" aria-hidden="true"></span>
-                    <a class="account-link" href="{{ links.login }}" title="Entrar">Entrar</a>
-                    <span class="account-separator">/</span>
-                    <a class="account-link" href="{{ links.register }}" title="Cadastrar">Cadastrar</a>
-                </div>
+                <strong>Olá, visitante</strong>
+                <span>Acesse sua conta para continuar</span>
+
+                <a href="{{ links.login }}" class="cta">
+                    Acessar minha conta
+                </a>
+
+                <span>Ainda não tem conta? <a href="{{ links.register }}"><strong>Cadastre-se agora</strong></a></span>
             </div>
         </div>
 
