@@ -14,7 +14,7 @@
                 <h1>Sua sacola está vazia.</h1>
             </div>
 
-            <button class="cta">Escolher produtos</button>
+            <button class="cta" data-bs-dismiss="offcanvas" aria-label="Close">Escolher produtos</button>
         </div>
 
         <div class="sideCart_products_list">
@@ -105,6 +105,7 @@ $(document).ready(async function () {
     } else {
         $('.sideCart_products_list').toggle()
         $('.theres-nothing').css("display", "flex")
+        $('.total').toggle()
     }
 });    
 </script>

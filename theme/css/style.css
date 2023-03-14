@@ -3078,6 +3078,26 @@ html ::-webkit-scrollbar-thumb:hover {
     min-height: 90px;
   }
 }
+.header-offcanvas-cart .offcanvas .offcanvas-body .theres-nothing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.header-offcanvas-cart .offcanvas .offcanvas-body .theres-nothing > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+.header-offcanvas-cart .offcanvas .offcanvas-body .theres-nothing h1 {
+  font-weight: 700;
+}
+.header-offcanvas-cart .offcanvas .offcanvas-body .theres-nothing .ph-handbag {
+  font-size: 5rem;
+}
 .header-offcanvas-cart .offcanvas .total {
   display: flex;
   flex-direction: column;
