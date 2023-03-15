@@ -1076,6 +1076,78 @@
     }
 }
 
+#offcanvasMenu {
+    .offcanvas-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid var(--wm_gray-200);
+
+        strong {
+            font-size: 1.25rem;
+        }
+
+        button {
+            font-size: 1.5rem;
+
+        }
+    }
+
+    .menuMobile-account {
+        display: flex;
+        flex-direction: column;
+
+
+        margin: 0;
+        border: 0;
+        
+        .loggedout {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        
+            &-greetings {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+    
+            &-register-link {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .menuMobile-content {
+        height: 100%;
+        overflow: visible;
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-item {
+            font-size: 1rem;
+            
+            border-bottom: 1px solid var(--wm_gray-200);
+        }
+        
+        &-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+            padding: 1.5rem 0;
+            height: 100%;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+}
+
 @include small {
     .header-button {
         flex-direction: column;

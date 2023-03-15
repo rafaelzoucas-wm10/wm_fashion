@@ -26,47 +26,29 @@
 
             {# SE NÃO ESTÁ LOGADO #}
             <div class="tray-hide account-item loggedout" data-logged-user="false">
-                <strong>Olá, visitante</strong>
+                <strong class="loggedout-greetings">Olá, visitante</strong>
                 <span>Acesse sua conta para continuar</span>
 
                 <a href="{{ links.login }}" class="cta">
                     Acessar minha conta
                 </a>
 
-                <span>Ainda não tem conta? <a href="{{ links.register }}"><strong>Cadastre-se agora</strong></a></span>
+                <span>Ainda não tem conta? <a href="{{ links.register }}" class="loggedout-register-link"><strong>Cadastre-se agora</strong></a></span>
             </div>
         </div>
 
         <div class="menuMobile-content">
-            <nav class="menuMobile-menu">
-                <ul class="menu-list">
-                    {% for category in categories %}
-                        <li class="menu-firstLevel {{ category.children ? 'subList' }}">
-                            <a class="menu-link" href="{{ category.link }}">{{ category.name }}</a>
-    
-                            {% if category.children %}
-                                <ul class="menu-secondLevel">
-                                    {% for level2 in category.children %}
-                                        <li {% if level2.children %} class="sub" {% endif %}>
-                                            <a class="menu-link" href="{{ level2.link }}">{{ level2.name }}</a>
-    
-                                            {% if level2.children %}
-                                                <ul class="menu-thirdLevel">
-                                                    {% for level3 in level2.children %}
-                                                        <li>
-                                                            <a class="menu-link" href="{{ level3.link }}">{{ level3.name }}</a>
-                                                        </li>
-                                                    {% endfor %}
-                                                </ul>
-                                            {% endif %}
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-                </ul>
-            </nav>
+            <ul class="menuMobile-content-list">
+                {% for category in categories %}
+                    <li class="menuMobile-content-item">
+                        <a class="menuMobile-content-link" href="{{ category.link }}">
+                            {{ category.name }}
+
+                            <div class="ph-caret-right"></div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </aside>
