@@ -25,7 +25,7 @@
                 {{ id == 'bottom' ? banners.extra2.src :
                     id == 'footer' ? banners.extra3.src :
                     id == 'title' ? banners.extra4.src 
-                }}                
+                }}
             ">
     {% endif %}  
             <img class="banner-img {{ swiper ? lazy_class : ( not isSlide ? lazy_class ) }}"
