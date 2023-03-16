@@ -4329,7 +4329,6 @@ html ::-webkit-scrollbar-thumb:hover {
 .reviews-container .dep_item {
   display: flex;
   padding: 0 10px;
-  width: 33.333333%;
 }
 .reviews-container .dep_item.swiper-slide {
   height: auto;
@@ -5440,21 +5439,6 @@ body.modal-open {
   .catalog-listRefinement .compare-button {
     margin-top: 0;
     width: unset;
-  }
-}
-@media (max-width: 768px) {
-  .catalog-list.listProduct-item {
-    width: 50%;
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .catalog-list.listProduct-item {
-    width: 50%;
-  }
-}
-@media (min-width: 1280.1px) {
-  .catalog-list.listProduct-item {
-    width: 33.3333333333%;
   }
 }
 .catalog-empty {

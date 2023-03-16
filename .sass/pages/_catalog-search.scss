@@ -171,20 +171,6 @@
         }
     }
 
-    &-list.listProduct-item {
-        @include small {
-            width: calc(100% / 2);
-        }
-
-        @include medium {
-            width: calc(100% / 2);
-        }
-
-        @include large {
-            width: calc(100% / 3);
-        }
-    }
-
     &-empty {
         @include fontInsert(1.5, 700);
         padding: 2.5rem 0;
