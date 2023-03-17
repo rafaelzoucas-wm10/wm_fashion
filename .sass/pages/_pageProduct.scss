@@ -621,6 +621,9 @@
     }
 
     &-buy {
+        display: flex;
+        flex-direction: row;
+        
         margin-bottom: 1.5rem;
         position: relative;
 
@@ -652,7 +655,6 @@
                 border-radius: 2px;
                 text-align: center;
                 margin-right: 0.5rem;
-                height: 3.125rem;
                 width: 3.5rem;
             }
         }
@@ -708,6 +710,11 @@
             &-text {
                 @include fontInsert(0.875, 600, var(--c_general_text1));
                 margin-bottom: 0.5rem;
+            }
+
+            &-form {
+                display: flex;
+                flex-direction: row;
             }
 
             &-label {
@@ -1780,7 +1787,7 @@
 
     .tabs {
         &-nav {
-            border-bottom: 2px solid var(--c_general_main);
+            border-bottom: 1px solid var(--wm_gray-200);
             margin-bottom: 3rem;
             overflow-x: auto;
 
@@ -1788,7 +1795,9 @@
 
             .nav {
                 &-list {
-                    @extend %flex-betw;
+                    display: flex;
+                    flex-direction: row;
+
                     padding: 1rem 2rem 0 2rem;
                     min-width: 100%;
                     width: fit-content;

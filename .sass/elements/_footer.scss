@@ -4,304 +4,290 @@
     margin-top: 3rem;
     padding: 0px 0 28px;
 
-    .footer {
-        &-newsletter {
-            @extend %flex-center-center;
-            max-width: $v_width_content_page;
+    &-newsletter {
+        @extend %flex-center-center;
+        max-width: $v_width_content_page;
 
-            @include small {
-                flex-wrap: wrap;
-                padding: 0;
-                margin: 2.5rem 1.2rem 0 1.2rem;
-                border-bottom: 1px solid var(--c_general_main);
+        @include small {
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 2.5rem 1.2rem 0 1.2rem;
+            border-bottom: 1px solid var(--wm_gray-200);
+        }
+
+        @include medium {
+            margin: 0 auto;
+            padding: 2.2rem 2rem;
+            border-bottom: 1px solid var(--wm_gray-200);
+        }
+
+        @include large {
+            margin: 0 auto;
+            padding: 2.2rem 2rem;
+            border-bottom: 1px solid var(--wm_gray-200);
+        }
+
+        .newsletter {
+            &-text {
+                @extend %flex-center-center;
+                display: block;
+
+                @include small {
+                    padding-bottom: 2rem;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                @include medium {
+                    padding-bottom: 0;
+                    text-align: center;
+                    width: 40%;
+                }
+
+                @include large {
+                    padding-bottom: 0;
+                    text-align: center;
+                    width: 40%;
+                }
+
+                .text {
+                    &-emphasis {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: var(--c_footer_title);
+                    }
+
+                    &-paragraph {
+                        font-weight: 600;
+                        color: var(--c_general_text1);
+                    }
+                }
             }
 
-            @include medium {
-                margin: 0 auto;
-                padding: 2.2rem 2rem;
-                border-bottom: 1px solid var(--c_general_main);
-            }
+            &-email {
+                @extend %flex-center-center;
+                position: relative;
 
-            @include large {
-                margin: 0 auto;
-                padding: 2.2rem 2rem;
-                border-bottom: 1px solid var(--c_general_main);
-            }
+                @include small {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    padding-left: 0;
+                }
 
-            .newsletter {
-                &-text {
-                    @extend %flex-center-center;
-                    display: block;
+                @include medium {
+                    padding-left: 1.25em;
+                    width: 60%;
+                }
+
+                @include large {
+                    padding-left: 1.25em;
+                    width: 60%;
+                }
+
+                .email-field {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0.75rem;
+
+                    padding: 1rem 3rem 1rem 1rem;
+        
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 100%;
+        
+                    background: var(--wm_gray-100);
+                    
+                    width: 100%;
+                    
+                    transition: all 75ms ease-in-out;
+                    
+                    @include small {
+                        font-size: 0.8rem;
+                    }
+                    
+                    &:focus {
+                        outline: 2px solid var(--wm_black);
+                        border-radius: 0.5rem;
+                    }
+                    
+                    &::placeholder {
+                        color: var(--wm_gray_500);
+                        opacity: 0.6;
+                    }
 
                     @include small {
-                        padding-bottom: 2rem;
-                        text-align: center;
+                        max-width: unset;
+                        margin-right: 0;
+                        margin-bottom: 1rem;
                         width: 100%;
                     }
 
                     @include medium {
-                        padding-bottom: 0;
-                        text-align: center;
-                        width: 40%;
+                        max-width: unset;
+                        margin-right: 1em;
+                        width: 50%;
                     }
 
                     @include large {
-                        padding-bottom: 0;
-                        text-align: center;
-                        width: 40%;
-                    }
-
-                    .text {
-                        &-emphasis {
-                            font-size: 1.5rem;
-                            font-weight: 700;
-                            color: var(--c_footer_title);
-                        }
-
-                        &-paragraph {
-                            font-weight: 600;
-                            color: var(--c_general_text1);
-                        }
+                        max-width: 420px;
+                        margin-right: 1em;
+                        width: 50%;
                     }
                 }
 
-                &-email {
-                    @extend %flex-center-center;
-                    position: relative;
+                .button1.newsletter-button {
+                    min-height: 56px;
+                    flex-shrink: 0;
 
                     @include small {
                         width: 100%;
-                        flex-wrap: wrap;
-                        padding-left: 0;
+                        margin-bottom: 2.5rem;
                     }
 
                     @include medium {
-                        padding-left: 1.25em;
-                        width: 60%;
-                    }
-
-                    @include large {
-                        padding-left: 1.25em;
-                        width: 60%;
-                    }
-
-                    .email-field {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        gap: 0.75rem;
-
-                        padding: 1rem 3rem 1rem 1rem;
-            
-                        font-size: 1rem;
-                        font-weight: 400;
-                        line-height: 100%;
-            
-                        background: var(--wm_gray-100);
-                        
-                        width: 100%;
-                        
-                        transition: all 75ms ease-in-out;
-                        
-                        @include small {
-                            font-size: 0.8rem;
-                        }
-                        
-                        &:focus {
-                            outline: 2px solid var(--wm_black);
-                            border-radius: 0.5rem;
-                        }
-                        
-                        &::placeholder {
-                            color: var(--wm_gray_500);
-                            opacity: 0.6;
-                        }
-
-                        @include small {
-                            max-width: unset;
-                            margin-right: 0;
-                            margin-bottom: 1rem;
-                            width: 100%;
-                        }
-
-                        @include medium {
-                            max-width: unset;
-                            margin-right: 1em;
-                            width: 50%;
-                        }
-
-                        @include large {
-                            max-width: 420px;
-                            margin-right: 1em;
-                            width: 50%;
-                        }
-                    }
-
-                    .button1.newsletter-button {
-                        min-height: 56px;
-                        flex-shrink: 0;
-
-                        @include small {
-                            width: 100%;
-                            margin-bottom: 2.5rem;
-                        }
-
-                        @include medium {
-                        }
                     }
                 }
             }
         }
+    }
 
-        &-info {
-            max-width: $v_width_content_page;
-            display: grid;
+    &-info {
+        max-width: $v_width_content_page;
+        display: grid;
 
-            @include small {
-                margin: 4rem 1.2rem 2rem 1.2rem;
-                grid-template-areas:
-                    'contact'
-                    'pages'
-                    'payment'
-                    'security';
-                grid-template-columns: 100%;
-                grid-template-rows: auto;
-                grid-gap: 2.5rem;
+        @include small {
+            margin: 4rem 1.2rem 2rem 1.2rem;
+            grid-template-areas:
+                'contact'
+                'pages'
+                'payment'
+                'security';
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            grid-gap: 2.5rem;
+        }
+
+        @include medium {
+            margin: 4rem 2rem;
+            grid-template-areas:
+                'contact pages payment'
+                'contact pages security';
+            grid-template-columns: calc((100% - 7.5rem) / 3) calc((100% - 7.5rem) / 3) calc((100% - 7.5rem) / 3);
+            grid-template-rows: auto;
+            grid-gap: 2.5rem;
+        }
+
+        @include large {
+            margin: 4rem auto;
+            grid-template-areas: 'contact pages payment security';
+            grid-template-columns: calc(100% / 4) 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 2.5rem;
+        }
+
+        .info {
+            &-contact {
+                grid-area: contact;
+            }
+            &-pages {
+                grid-area: pages;
+            }
+            &-payment {
+                grid-area: payment;
+            }
+            &-security {
+                grid-area: security;
             }
 
-            @include medium {
-                margin: 4rem 2rem;
-                grid-template-areas:
-                    'contact pages payment'
-                    'contact pages security';
-                grid-template-columns: calc((100% - 7.5rem) / 3) calc((100% - 7.5rem) / 3) calc((100% - 7.5rem) / 3);
-                grid-template-rows: auto;
-                grid-gap: 2.5rem;
+            &-contact {
+
+                .icon.icon-phone,
+                .icon.icon-email {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    fill: var(--c_footer_icon);
+                    padding-right: 0.4rem;
+                }
             }
 
-            @include large {
-                margin: 4rem auto;
-                grid-template-areas: 'contact pages payment security';
-                grid-template-columns: calc(100% / 4) 1fr 1fr 1fr;
-                grid-template-rows: auto;
-                grid-gap: 2.5rem;
+            &-title {
+                @include fontInsert(1, 700, var(--c_footer_title));
+                margin-bottom: 0.92rem;
             }
 
-            .info {
-                &-contact {
-                    grid-area: contact;
-                }
-                &-pages {
-                    grid-area: pages;
-                }
-                &-payment {
-                    grid-area: payment;
-                }
-                &-security {
-                    grid-area: security;
-                }
+            &-list {
+                padding-bottom: 1rem;
+                word-break: break-word;
 
-                &-contact {
-                    border: 2px solid var(--c_general_main);
-                    border-radius: 0.5rem;
+                .contact-item {
+                    @extend %flex-start-center;
+                    padding-bottom: 0.8rem;
+                    opacity: 1;
+                    transition: $transit_default;
 
-                    @include small {
-                        padding: 1.3rem 1.5rem;
-                    }
-                    @include medium {
-                        padding: 1.3rem 1.5rem;
-                    }
-                    @include large {
-                        padding: 1.5rem;
+                    &:hover {
+                        color: var(--c_footer_title);
+                        opacity: 0.8;
                     }
 
-                    .icon.icon-phone,
-                    .icon.icon-email {
-                        width: 1.5rem;
-                        height: 1.5rem;
-                        fill: var(--c_footer_icon);
-                        padding-right: 0.4rem;
+                    .icon-phone,
+                    .icon-email,
+                    .icon-whatsapp {
+                        margin-right: 0.5rem;
                     }
                 }
 
-                &-title {
-                    @include fontInsert(1, 700, var(--c_footer_title));
-                    margin-bottom: 0.92rem;
-                }
+                .info-link {
+                    @include fontInsert(0.9, 400, var(--c_footer_text));
+                    padding-bottom: 0.6rem;
+                    display: block;
+                    opacity: 1;
+                    transition: $transit_default;
 
-                &-list {
-                    padding-bottom: 1rem;
-                    word-break: break-word;
-
-                    .contact-item {
-                        @extend %flex-start-center;
-                        padding-bottom: 0.8rem;
-                        opacity: 1;
-                        transition: $transit_default;
-
-                        &:hover {
-                            color: var(--c_footer_title);
-                            opacity: 0.8;
-                        }
-
-                        .icon-phone,
-                        .icon-email,
-                        .icon-whatsapp {
-                            margin-right: 0.5rem;
-                        }
+                    &:hover {
+                        color: var(--c_footer_title);
+                        opacity: 0.8;
                     }
+                }
+            }
 
-                    .info-link {
+            &-payment {
+                .payment {
+                    &-list {
+                        width: 100%;
+                        max-width: 192px;
+                    }
+                    &-text {
                         @include fontInsert(0.9, 400, var(--c_footer_text));
-                        padding-bottom: 0.6rem;
-                        display: block;
-                        opacity: 1;
-                        transition: $transit_default;
+                        padding-bottom: 0.5rem;
+                    }
 
-                        &:hover {
-                            color: var(--c_footer_title);
-                            opacity: 0.8;
-                        }
+                    &-debt,
+                    &-credit {
+                        @extend %flex-start-center;
+                        flex-wrap: wrap;
+                        margin-bottom: 0.9rem;
+                    }
+
+                    &-item {
+                        margin: 0 0.3rem 0.3rem 0;
                     }
                 }
+            }
 
-                &-payment {
-                    .payment {
-                        &-list {
-                            width: 100%;
-                            max-width: 192px;
-                        }
-                        &-text {
-                            @include fontInsert(0.9, 400, var(--c_footer_text));
-                            padding-bottom: 0.5rem;
-                        }
+            &-media {
+                display: flex;
+                flex-wrap: wrap;
 
-                        &-debt,
-                        &-credit {
-                            @extend %flex-start-center;
-                            flex-wrap: wrap;
-                            margin-bottom: 0.9rem;
-                        }
+                .media-link {
+                    margin-right: 1rem;
+                    margin-bottom: 0.5rem;
+                    transition: $transit_default;
+                    opacity: 1;
 
-                        &-item {
-                            margin: 0 0.3rem 0.3rem 0;
-                        }
-                    }
-                }
-
-                &-media {
-                    display: flex;
-                    flex-wrap: wrap;
-
-                    .media-link {
-                        margin-right: 1rem;
-                        margin-bottom: 0.5rem;
-                        transition: $transit_default;
-                        opacity: 1;
-
-                        &:hover {
-                            opacity: 0.7;
-                        }
+                    &:hover {
+                        opacity: 0.7;
                     }
                 }
             }

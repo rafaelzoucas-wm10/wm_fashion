@@ -703,7 +703,7 @@ button.swiper-pagination-bullet {
 
 .page-extra .container form tr:only-child td:nth-child(1)::before, .page-extra .container form tr:only-child td:nth-child(2)::before, .page-central_cliente #paginacao .right .prev a,
 .page-central_cliente #paginacao .right .next a, .page-central_cliente #paginacao, .page-lista .lista-produtos .lista-produto-adquirido,
-.page-print_lista .lista-produtos .lista-produto-adquirido, .page-contact .contactUs-phone:before, .page-contact .contactUs-whats:before, .page-contact .contactUs-email:before, .modals.u-show, .pageProduct-batchPromotion #miniad img:not([src*=".png"]):not([src*=".jpg"]):not([src*=".jpeg"]):not([src*=".svg"]):not([src*=".gif"]), .pageProduct-tags .tag, .pageProduct-gallery .gallery-thumbs, .pageProduct-gallery .swiper-slide, .pageProduct-gallery, .container3 .board .right, .page-comparador .comparator ul li ul .comparsionFoto div, .page-comparador .comparatorTabs ul li.aberta, .page-comparador .comparatorTabs ul li, .pagination, .brands-item, .modal .modal-body, .tagCloud-list, .footer-credits .credits, .footer .footer-newsletter .newsletter-email, .footer .footer-newsletter .newsletter-text, .footer .footer-newsletter, .header-menu .menu-firstLevel, .header-menu, .header-offcanvas-cart .header-cart-button, .header-offcanvas-cart, .header-account, .header-search, .justify-center {
+.page-print_lista .lista-produtos .lista-produto-adquirido, .page-contact .contactUs-phone:before, .page-contact .contactUs-whats:before, .page-contact .contactUs-email:before, .modals.u-show, .pageProduct-batchPromotion #miniad img:not([src*=".png"]):not([src*=".jpg"]):not([src*=".jpeg"]):not([src*=".svg"]):not([src*=".gif"]), .pageProduct-tags .tag, .pageProduct-gallery .gallery-thumbs, .pageProduct-gallery .swiper-slide, .pageProduct-gallery, .container3 .board .right, .page-comparador .comparator ul li ul .comparsionFoto div, .page-comparador .comparatorTabs ul li.aberta, .page-comparador .comparatorTabs ul li, .pagination, .brands-item, .modal .modal-body, .tagCloud-list, .footer-credits .credits, .footer-newsletter .newsletter-email, .footer-newsletter .newsletter-text, .footer-newsletter, .header-menu .menu-firstLevel, .header-menu, .header-offcanvas-cart .header-cart-button, .header-offcanvas-cart, .header-account, .header-search, .justify-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -729,13 +729,13 @@ button.swiper-pagination-bullet {
 
 .pageProduct .cor_variacao .lista_cor_variacao,
 .pageProduct .cor_variacao [data-id=lista_cor_variacao],
-.pageProduct .cor_variacao [data-id^=second-dropdown-show], .pageProduct-buy #product-form-box, .page-comparador .comparator ul li ul li:not(.comparsionFoto), .filter-list .filter-checkbox, .breadcrumb, .footer .footer-info .info-payment .payment-debt, .footer .footer-info .info-payment .payment-credit, .footer .footer-info .info-list .contact-item, .menuMobile-account .u-show .account-access, .header-logo {
+.pageProduct .cor_variacao [data-id^=second-dropdown-show], .pageProduct-buy #product-form-box, .page-comparador .comparator ul li ul li:not(.comparsionFoto), .filter-list .filter-checkbox, .breadcrumb, .footer-info .info-payment .payment-debt, .footer-info .info-payment .payment-credit, .footer-info .info-list .contact-item, .menuMobile-account .u-show .account-access, .header-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.page-central_listas .container3:not(.central-conteudo) + .board, .pageProduct-lastSeen .lastSeen-list #produtos, .pageProduct .tabs-nav .nav-list, .modal .cart-preview-footer, .modal .modal-header, .modal .modal-content #div_atualiza form fieldset p:last-child, .reviews-container .dep_lista {
+.page-central_listas .container3:not(.central-conteudo) + .board, .pageProduct-lastSeen .lastSeen-list #produtos, .modal .cart-preview-footer, .modal .modal-header, .modal .modal-content #div_atualiza form fieldset p:last-child, .reviews-container .dep_lista {
   display: flex;
   justify-content: space-between;
 }
@@ -3497,87 +3497,87 @@ html ::-webkit-scrollbar-thumb:hover {
   margin-top: 3rem;
   padding: 0px 0 28px;
 }
-.footer .footer-newsletter {
+.footer-newsletter {
   max-width: 1210px;
 }
 @media (max-width: 768px) {
-  .footer .footer-newsletter {
+  .footer-newsletter {
     flex-wrap: wrap;
     padding: 0;
     margin: 2.5rem 1.2rem 0 1.2rem;
-    border-bottom: 1px solid var(--c_general_main);
+    border-bottom: 1px solid var(--wm_gray-200);
   }
 }
 @media (min-width: 768.1px) and (max-width: 1280px) {
-  .footer .footer-newsletter {
+  .footer-newsletter {
     margin: 0 auto;
     padding: 2.2rem 2rem;
-    border-bottom: 1px solid var(--c_general_main);
+    border-bottom: 1px solid var(--wm_gray-200);
   }
 }
 @media (min-width: 1280.1px) {
-  .footer .footer-newsletter {
+  .footer-newsletter {
     margin: 0 auto;
     padding: 2.2rem 2rem;
-    border-bottom: 1px solid var(--c_general_main);
+    border-bottom: 1px solid var(--wm_gray-200);
   }
 }
-.footer .footer-newsletter .newsletter-text {
+.footer-newsletter .newsletter-text {
   display: block;
 }
 @media (max-width: 768px) {
-  .footer .footer-newsletter .newsletter-text {
+  .footer-newsletter .newsletter-text {
     padding-bottom: 2rem;
     text-align: center;
     width: 100%;
   }
 }
 @media (min-width: 768.1px) and (max-width: 1280px) {
-  .footer .footer-newsletter .newsletter-text {
+  .footer-newsletter .newsletter-text {
     padding-bottom: 0;
     text-align: center;
     width: 40%;
   }
 }
 @media (min-width: 1280.1px) {
-  .footer .footer-newsletter .newsletter-text {
+  .footer-newsletter .newsletter-text {
     padding-bottom: 0;
     text-align: center;
     width: 40%;
   }
 }
-.footer .footer-newsletter .newsletter-text .text-emphasis {
+.footer-newsletter .newsletter-text .text-emphasis {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--c_footer_title);
 }
-.footer .footer-newsletter .newsletter-text .text-paragraph {
+.footer-newsletter .newsletter-text .text-paragraph {
   font-weight: 600;
   color: var(--c_general_text1);
 }
-.footer .footer-newsletter .newsletter-email {
+.footer-newsletter .newsletter-email {
   position: relative;
 }
 @media (max-width: 768px) {
-  .footer .footer-newsletter .newsletter-email {
+  .footer-newsletter .newsletter-email {
     width: 100%;
     flex-wrap: wrap;
     padding-left: 0;
   }
 }
 @media (min-width: 768.1px) and (max-width: 1280px) {
-  .footer .footer-newsletter .newsletter-email {
+  .footer-newsletter .newsletter-email {
     padding-left: 1.25em;
     width: 60%;
   }
 }
 @media (min-width: 1280.1px) {
-  .footer .footer-newsletter .newsletter-email {
+  .footer-newsletter .newsletter-email {
     padding-left: 1.25em;
     width: 60%;
   }
 }
-.footer .footer-newsletter .newsletter-email .email-field {
+.footer-newsletter .newsletter-email .email-field {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -3591,24 +3591,24 @@ html ::-webkit-scrollbar-thumb:hover {
   transition: all 75ms ease-in-out;
 }
 @media (max-width: 768px) {
-  .footer .footer-newsletter .newsletter-email .email-field {
+  .footer-newsletter .newsletter-email .email-field {
     font-size: 0.8rem;
   }
 }
-.footer .footer-newsletter .newsletter-email .email-field:focus {
+.footer-newsletter .newsletter-email .email-field:focus {
   outline: 2px solid var(--wm_black);
   border-radius: 0.5rem;
 }
-.footer .footer-newsletter .newsletter-email .email-field::-moz-placeholder {
+.footer-newsletter .newsletter-email .email-field::-moz-placeholder {
   color: var(--wm_gray_500);
   opacity: 0.6;
 }
-.footer .footer-newsletter .newsletter-email .email-field::placeholder {
+.footer-newsletter .newsletter-email .email-field::placeholder {
   color: var(--wm_gray_500);
   opacity: 0.6;
 }
 @media (max-width: 768px) {
-  .footer .footer-newsletter .newsletter-email .email-field {
+  .footer-newsletter .newsletter-email .email-field {
     max-width: unset;
     margin-right: 0;
     margin-bottom: 1rem;
@@ -3616,43 +3616,43 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 @media (min-width: 768.1px) and (max-width: 1280px) {
-  .footer .footer-newsletter .newsletter-email .email-field {
+  .footer-newsletter .newsletter-email .email-field {
     max-width: unset;
     margin-right: 1em;
     width: 50%;
   }
 }
 @media (min-width: 1280.1px) {
-  .footer .footer-newsletter .newsletter-email .email-field {
+  .footer-newsletter .newsletter-email .email-field {
     max-width: 420px;
     margin-right: 1em;
     width: 50%;
   }
 }
-.footer .footer-newsletter .newsletter-email .button1.newsletter-button, .footer .footer-newsletter .newsletter-email .page-lista .lista-produtos form .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before, .page-lista .lista-produtos form .footer .footer-newsletter .newsletter-email .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before,
-.footer .footer-newsletter .newsletter-email .page-print_lista .lista-produtos form .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before,
-.page-print_lista .lista-produtos form .footer .footer-newsletter .newsletter-email .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before, .footer .footer-newsletter .newsletter-email .pageProduct-buyTogether .buyTogether .newsletter-button.botao-compre-junto:not(.botao-sob-consulta), .pageProduct-buyTogether .buyTogether .footer .footer-newsletter .newsletter-email .newsletter-button.botao-compre-junto:not(.botao-sob-consulta), .footer .footer-newsletter .newsletter-email .pageProduct-outOfStock .produto-preco .newsletter-button.botao_tire_duvidas, .pageProduct-outOfStock .produto-preco .footer .footer-newsletter .newsletter-email .newsletter-button.botao_tire_duvidas, .footer .footer-newsletter .newsletter-email .pageProduct-buy .newsletter-button#button-buy, .pageProduct-buy .footer .footer-newsletter .newsletter-email .newsletter-button#button-buy, .footer .footer-newsletter .newsletter-email .page-comparador .comparator ul li ul .comparsionFoto div a.newsletter-button[alt=Comprar], .page-comparador .comparator ul li ul .comparsionFoto div .footer .footer-newsletter .newsletter-email a.newsletter-button[alt=Comprar],
-.footer .footer-newsletter .newsletter-email .page-comparador .comparator ul li ul .comparsionFoto div a.newsletter-button[title=Escolher],
-.page-comparador .comparator ul li ul .comparsionFoto div .footer .footer-newsletter .newsletter-email a.newsletter-button[title=Escolher], .footer .footer-newsletter .newsletter-email .modal .botao-prosseguir-compra .newsletter-button.botao-commerce-img, .modal .botao-prosseguir-compra .footer .footer-newsletter .newsletter-email .newsletter-button.botao-commerce-img, .footer .footer-newsletter .newsletter-email .modal .detalhesBrinde .newsletter-button.botao, .modal .detalhesBrinde .footer .footer-newsletter .newsletter-email .newsletter-button.botao {
+.footer-newsletter .newsletter-email .button1.newsletter-button, .footer-newsletter .newsletter-email .page-lista .lista-produtos form .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before, .page-lista .lista-produtos form .footer-newsletter .newsletter-email .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before,
+.footer-newsletter .newsletter-email .page-print_lista .lista-produtos form .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before,
+.page-print_lista .lista-produtos form .footer-newsletter .newsletter-email .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before, .footer-newsletter .newsletter-email .pageProduct-buyTogether .buyTogether .newsletter-button.botao-compre-junto:not(.botao-sob-consulta), .pageProduct-buyTogether .buyTogether .footer-newsletter .newsletter-email .newsletter-button.botao-compre-junto:not(.botao-sob-consulta), .footer-newsletter .newsletter-email .pageProduct-outOfStock .produto-preco .newsletter-button.botao_tire_duvidas, .pageProduct-outOfStock .produto-preco .footer-newsletter .newsletter-email .newsletter-button.botao_tire_duvidas, .footer-newsletter .newsletter-email .pageProduct-buy .newsletter-button#button-buy, .pageProduct-buy .footer-newsletter .newsletter-email .newsletter-button#button-buy, .footer-newsletter .newsletter-email .page-comparador .comparator ul li ul .comparsionFoto div a.newsletter-button[alt=Comprar], .page-comparador .comparator ul li ul .comparsionFoto div .footer-newsletter .newsletter-email a.newsletter-button[alt=Comprar],
+.footer-newsletter .newsletter-email .page-comparador .comparator ul li ul .comparsionFoto div a.newsletter-button[title=Escolher],
+.page-comparador .comparator ul li ul .comparsionFoto div .footer-newsletter .newsletter-email a.newsletter-button[title=Escolher], .footer-newsletter .newsletter-email .modal .botao-prosseguir-compra .newsletter-button.botao-commerce-img, .modal .botao-prosseguir-compra .footer-newsletter .newsletter-email .newsletter-button.botao-commerce-img, .footer-newsletter .newsletter-email .modal .detalhesBrinde .newsletter-button.botao, .modal .detalhesBrinde .footer-newsletter .newsletter-email .newsletter-button.botao {
   min-height: 56px;
   flex-shrink: 0;
 }
 @media (max-width: 768px) {
-  .footer .footer-newsletter .newsletter-email .button1.newsletter-button, .footer .footer-newsletter .newsletter-email .page-lista .lista-produtos form .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before, .page-lista .lista-produtos form .footer .footer-newsletter .newsletter-email .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before,
-.footer .footer-newsletter .newsletter-email .page-print_lista .lista-produtos form .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before,
-.page-print_lista .lista-produtos form .footer .footer-newsletter .newsletter-email .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before, .footer .footer-newsletter .newsletter-email .pageProduct-buyTogether .buyTogether .newsletter-button.botao-compre-junto:not(.botao-sob-consulta), .pageProduct-buyTogether .buyTogether .footer .footer-newsletter .newsletter-email .newsletter-button.botao-compre-junto:not(.botao-sob-consulta), .footer .footer-newsletter .newsletter-email .pageProduct-outOfStock .produto-preco .newsletter-button.botao_tire_duvidas, .pageProduct-outOfStock .produto-preco .footer .footer-newsletter .newsletter-email .newsletter-button.botao_tire_duvidas, .footer .footer-newsletter .newsletter-email .pageProduct-buy .newsletter-button#button-buy, .pageProduct-buy .footer .footer-newsletter .newsletter-email .newsletter-button#button-buy, .footer .footer-newsletter .newsletter-email .page-comparador .comparator ul li ul .comparsionFoto div a.newsletter-button[alt=Comprar], .page-comparador .comparator ul li ul .comparsionFoto div .footer .footer-newsletter .newsletter-email a.newsletter-button[alt=Comprar],
-.footer .footer-newsletter .newsletter-email .page-comparador .comparator ul li ul .comparsionFoto div a.newsletter-button[title=Escolher],
-.page-comparador .comparator ul li ul .comparsionFoto div .footer .footer-newsletter .newsletter-email a.newsletter-button[title=Escolher], .footer .footer-newsletter .newsletter-email .modal .botao-prosseguir-compra .newsletter-button.botao-commerce-img, .modal .botao-prosseguir-compra .footer .footer-newsletter .newsletter-email .newsletter-button.botao-commerce-img, .footer .footer-newsletter .newsletter-email .modal .detalhesBrinde .newsletter-button.botao, .modal .detalhesBrinde .footer .footer-newsletter .newsletter-email .newsletter-button.botao {
+  .footer-newsletter .newsletter-email .button1.newsletter-button, .footer-newsletter .newsletter-email .page-lista .lista-produtos form .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before, .page-lista .lista-produtos form .footer-newsletter .newsletter-email .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before,
+.footer-newsletter .newsletter-email .page-print_lista .lista-produtos form .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before,
+.page-print_lista .lista-produtos form .footer-newsletter .newsletter-email .lista-produto-comprar > input[type=image] + .newsletter-button.lista-produto-check::before, .footer-newsletter .newsletter-email .pageProduct-buyTogether .buyTogether .newsletter-button.botao-compre-junto:not(.botao-sob-consulta), .pageProduct-buyTogether .buyTogether .footer-newsletter .newsletter-email .newsletter-button.botao-compre-junto:not(.botao-sob-consulta), .footer-newsletter .newsletter-email .pageProduct-outOfStock .produto-preco .newsletter-button.botao_tire_duvidas, .pageProduct-outOfStock .produto-preco .footer-newsletter .newsletter-email .newsletter-button.botao_tire_duvidas, .footer-newsletter .newsletter-email .pageProduct-buy .newsletter-button#button-buy, .pageProduct-buy .footer-newsletter .newsletter-email .newsletter-button#button-buy, .footer-newsletter .newsletter-email .page-comparador .comparator ul li ul .comparsionFoto div a.newsletter-button[alt=Comprar], .page-comparador .comparator ul li ul .comparsionFoto div .footer-newsletter .newsletter-email a.newsletter-button[alt=Comprar],
+.footer-newsletter .newsletter-email .page-comparador .comparator ul li ul .comparsionFoto div a.newsletter-button[title=Escolher],
+.page-comparador .comparator ul li ul .comparsionFoto div .footer-newsletter .newsletter-email a.newsletter-button[title=Escolher], .footer-newsletter .newsletter-email .modal .botao-prosseguir-compra .newsletter-button.botao-commerce-img, .modal .botao-prosseguir-compra .footer-newsletter .newsletter-email .newsletter-button.botao-commerce-img, .footer-newsletter .newsletter-email .modal .detalhesBrinde .newsletter-button.botao, .modal .detalhesBrinde .footer-newsletter .newsletter-email .newsletter-button.botao {
     width: 100%;
     margin-bottom: 2.5rem;
   }
 }
-.footer .footer-info {
+.footer-info {
   max-width: 1210px;
   display: grid;
 }
 @media (max-width: 768px) {
-  .footer .footer-info {
+  .footer-info {
     margin: 4rem 1.2rem 2rem 1.2rem;
     grid-template-areas: "contact" "pages" "payment" "security";
     grid-template-columns: 100%;
@@ -3661,7 +3661,7 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 @media (min-width: 768.1px) and (max-width: 1280px) {
-  .footer .footer-info {
+  .footer-info {
     margin: 4rem 2rem;
     grid-template-areas: "contact pages payment" "contact pages security";
     grid-template-columns: calc((100% - 7.5rem) / 3) calc((100% - 7.5rem) / 3) calc((100% - 7.5rem) / 3);
@@ -3670,7 +3670,7 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 @media (min-width: 1280.1px) {
-  .footer .footer-info {
+  .footer-info {
     margin: 4rem auto;
     grid-template-areas: "contact pages payment security";
     grid-template-columns: 25% 1fr 1fr 1fr;
@@ -3678,47 +3678,28 @@ html ::-webkit-scrollbar-thumb:hover {
     grid-gap: 2.5rem;
   }
 }
-.footer .footer-info .info-contact {
+.footer-info .info-contact {
   grid-area: contact;
 }
-.footer .footer-info .info-pages {
+.footer-info .info-pages {
   grid-area: pages;
 }
-.footer .footer-info .info-payment {
+.footer-info .info-payment {
   grid-area: payment;
 }
-.footer .footer-info .info-security {
+.footer-info .info-security {
   grid-area: security;
 }
-.footer .footer-info .info-contact {
-  border: 2px solid var(--c_general_main);
-  border-radius: 0.5rem;
-}
-@media (max-width: 768px) {
-  .footer .footer-info .info-contact {
-    padding: 1.3rem 1.5rem;
-  }
-}
-@media (min-width: 768.1px) and (max-width: 1280px) {
-  .footer .footer-info .info-contact {
-    padding: 1.3rem 1.5rem;
-  }
-}
-@media (min-width: 1280.1px) {
-  .footer .footer-info .info-contact {
-    padding: 1.5rem;
-  }
-}
-.footer .footer-info .info-contact .icon.icon-phone, .footer .footer-info .info-contact .page-contact .icon.contactUs-phone, .page-contact .footer .footer-info .info-contact .icon.contactUs-phone,
-.footer .footer-info .info-contact .icon.icon-email,
-.footer .footer-info .info-contact .page-contact .icon.contactUs-email,
-.page-contact .footer .footer-info .info-contact .icon.contactUs-email {
+.footer-info .info-contact .icon.icon-phone, .footer-info .info-contact .page-contact .icon.contactUs-phone, .page-contact .footer-info .info-contact .icon.contactUs-phone,
+.footer-info .info-contact .icon.icon-email,
+.footer-info .info-contact .page-contact .icon.contactUs-email,
+.page-contact .footer-info .info-contact .icon.contactUs-email {
   width: 1.5rem;
   height: 1.5rem;
   fill: var(--c_footer_icon);
   padding-right: 0.4rem;
 }
-.footer .footer-info .info-title {
+.footer-info .info-title {
   color: var(--c_footer_title);
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
@@ -3727,29 +3708,29 @@ html ::-webkit-scrollbar-thumb:hover {
   text-transform: none;
   margin-bottom: 0.92rem;
 }
-.footer .footer-info .info-list {
+.footer-info .info-list {
   padding-bottom: 1rem;
   word-break: break-word;
 }
-.footer .footer-info .info-list .contact-item {
+.footer-info .info-list .contact-item {
   padding-bottom: 0.8rem;
   opacity: 1;
   transition: 0.2s ease-out;
 }
-.footer .footer-info .info-list .contact-item:hover {
+.footer-info .info-list .contact-item:hover {
   color: var(--c_footer_title);
   opacity: 0.8;
 }
-.footer .footer-info .info-list .contact-item .icon-phone, .footer .footer-info .info-list .contact-item .page-contact .contactUs-phone, .page-contact .footer .footer-info .info-list .contact-item .contactUs-phone,
-.footer .footer-info .info-list .contact-item .icon-email,
-.footer .footer-info .info-list .contact-item .page-contact .contactUs-email,
-.page-contact .footer .footer-info .info-list .contact-item .contactUs-email,
-.footer .footer-info .info-list .contact-item .icon-whatsapp,
-.footer .footer-info .info-list .contact-item .page-contact .contactUs-whats,
-.page-contact .footer .footer-info .info-list .contact-item .contactUs-whats {
+.footer-info .info-list .contact-item .icon-phone, .footer-info .info-list .contact-item .page-contact .contactUs-phone, .page-contact .footer-info .info-list .contact-item .contactUs-phone,
+.footer-info .info-list .contact-item .icon-email,
+.footer-info .info-list .contact-item .page-contact .contactUs-email,
+.page-contact .footer-info .info-list .contact-item .contactUs-email,
+.footer-info .info-list .contact-item .icon-whatsapp,
+.footer-info .info-list .contact-item .page-contact .contactUs-whats,
+.page-contact .footer-info .info-list .contact-item .contactUs-whats {
   margin-right: 0.5rem;
 }
-.footer .footer-info .info-list .info-link {
+.footer-info .info-list .info-link {
   color: var(--c_footer_text);
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.9rem;
@@ -3761,15 +3742,15 @@ html ::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.2s ease-out;
 }
-.footer .footer-info .info-list .info-link:hover {
+.footer-info .info-list .info-link:hover {
   color: var(--c_footer_title);
   opacity: 0.8;
 }
-.footer .footer-info .info-payment .payment-list {
+.footer-info .info-payment .payment-list {
   width: 100%;
   max-width: 192px;
 }
-.footer .footer-info .info-payment .payment-text {
+.footer-info .info-payment .payment-text {
   color: var(--c_footer_text);
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.9rem;
@@ -3778,24 +3759,24 @@ html ::-webkit-scrollbar-thumb:hover {
   text-transform: none;
   padding-bottom: 0.5rem;
 }
-.footer .footer-info .info-payment .payment-debt, .footer .footer-info .info-payment .payment-credit {
+.footer-info .info-payment .payment-debt, .footer-info .info-payment .payment-credit {
   flex-wrap: wrap;
   margin-bottom: 0.9rem;
 }
-.footer .footer-info .info-payment .payment-item {
+.footer-info .info-payment .payment-item {
   margin: 0 0.3rem 0.3rem 0;
 }
-.footer .footer-info .info-media {
+.footer-info .info-media {
   display: flex;
   flex-wrap: wrap;
 }
-.footer .footer-info .info-media .media-link {
+.footer-info .info-media .media-link {
   margin-right: 1rem;
   margin-bottom: 0.5rem;
   transition: 0.2s ease-out;
   opacity: 1;
 }
-.footer .footer-info .info-media .media-link:hover {
+.footer-info .info-media .media-link:hover {
   opacity: 0.7;
 }
 .footer .title--border {
@@ -7177,6 +7158,8 @@ span.mensagensErro {
   margin-bottom: 1rem;
 }
 .pageProduct-buy {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 1.5rem;
   position: relative;
 }
@@ -7207,7 +7190,6 @@ span.mensagensErro {
   border-radius: 2px;
   text-align: center;
   margin-right: 0.5rem;
-  height: 3.125rem;
   width: 3.5rem;
 }
 .pageProduct-buy .buy-quantityTop,
@@ -7259,6 +7241,10 @@ span.mensagensErro {
   font-variant: normal;
   text-transform: none;
   margin-bottom: 0.5rem;
+}
+.pageProduct-shipping .shipping-form {
+  display: flex;
+  flex-direction: row;
 }
 .pageProduct-shipping .shipping-label {
   font-size: 0;
@@ -8343,11 +8329,13 @@ span.mensagensErro {
   margin-bottom: 5rem;
 }
 .pageProduct .tabs-nav {
-  border-bottom: 2px solid var(--c_general_main);
+  border-bottom: 1px solid var(--wm_gray-200);
   margin-bottom: 3rem;
   overflow-x: auto;
 }
 .pageProduct .tabs-nav .nav-list {
+  display: flex;
+  flex-direction: row;
   padding: 1rem 2rem 0 2rem;
   min-width: 100%;
   width: -moz-fit-content;

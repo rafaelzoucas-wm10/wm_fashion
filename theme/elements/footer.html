@@ -87,7 +87,7 @@
         </div>
 
         <div class="info-pages">
-            <div class="info-title title--border">Institucional {{ icon }}</div>
+            <div class="info-title">Institucional {{ icon }}</div>
             <ul class="info-list">
                 {% for custom in pages.custom %}
                     <li>
@@ -102,13 +102,13 @@
 
         <div class="info-payment">
             {% if paymentMethods.order or paymentMethods.credit %}
-                <div class="info-title title--border">Pagamento {{ icon }}</div>
+                <div class="info-title">Pagamento {{ icon }}</div>
                 {% element 'snippets/payment-list' %} 
             {% endif %}
         </div>
 
         <div class="info-security">
-            <div class="info-title title--border">Seguran&ccedil;a {{ icon }}</div>
+            <div class="info-title">Seguran&ccedil;a {{ icon }}</div>
             <ul class="info-list">
                 <li class="google-seal">
                     <a
